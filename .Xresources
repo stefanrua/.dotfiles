@@ -51,3 +51,12 @@ Xft.dpi:       120
 ! white
 *.color7:       #c5c8c6
 *.color15:      #ffffff
+
+! State:           ´bg´,     ´fg´,     ´bgalt´,  ´hlbg´,   ´hlfg´
+rofi.color-normal: #1d1f21,  #c5c8c6,  #313335,  #ec7357,  #1d1f21
+!rofi.color-urgent: #1d1f21,  #dc322f,  #eee8d5,  #dc322f,  #fdf6e3
+!rofi.color-active: #1d1f21,  #268bd2,  #eee8d5,  #268bd2,  #fdf6e3
+
+!                  ´background´, ´border´, ´separator´
+rofi.color-window: #1d1f21,      #ec7357,  #ec7357
+
