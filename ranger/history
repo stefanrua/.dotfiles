@@ -2,4 +2,7 @@
 open_with 
 shelq
 ?
+open_with vim
+re
+vim ToLearn
 delete

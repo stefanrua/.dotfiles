@@ -6,6 +6,7 @@ colorscheme desert        " set colorscheme
 set number                " show line numbers
 set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
+set scrolloff=999         " center cursor
 set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.

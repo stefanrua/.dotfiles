@@ -1,11 +1,13 @@
-URxvt.font:xft:Hack:size=12
-URxvt.letterSpace: 0
+URxvt.font:xft:Roboto Mono:size=12
+! URxvt.letterSpace: -5
 URxvt.scrollBar: false
+! URxvt.transparent: true
+! URxvt.blurRadius: 50
 ! URxvt.cursorColor: #F8F8F2
 ! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.internalBorder: 70
-! URxvt.geometry: 67x21
+URxvt.geometry: 50x25
 
 ! Fonts {{{
 Xft.antialias: true

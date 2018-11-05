@@ -1,8 +1,8 @@
 rofi.padding: 70
-rofi.font: Hack 16
+rofi.font: Roboto Mono 16
 
 # Dark theme.
-# rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 
 # Light theme.
-rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+# rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
