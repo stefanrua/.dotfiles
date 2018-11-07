@@ -124,6 +124,10 @@ super + {Left,Down,Up,Right}
 # my own stuff
 #
 
+# time and date
+super + d
+    notify-send "$(date +"%H:%M %d/%m/%Y")"
+
 # brightness
 XF86MonBrightnessDown
     xbacklight -dec 10%

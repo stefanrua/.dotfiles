@@ -1,8 +1,11 @@
 
-open_with 
 shelq
 ?
 open_with vim
 re
 vim ToLearn
+open_with
+open_with 
+open_with h
+rename sda2
 delete
