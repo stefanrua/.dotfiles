@@ -124,10 +124,10 @@ super + {Left,Down,Up,Right}
 # my own stuff
 #
 
-# time and date
+# time and battery
 super + d
-    notify-send "$(date +"%H:%M %d/%m/%Y")"
-
+    notify-send "$(date +"%H:%M %d/%m/%Y")"; notify-send "$(acpi -b)"
+    
 # brightness
 XF86MonBrightnessDown
     xbacklight -dec 10%
