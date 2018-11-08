@@ -5,7 +5,10 @@ open_with vim
 re
 vim ToLearn
 open_with
-open_with 
 open_with h
 rename sda2
 delete
+open_with 
+rename antoine-boissonot-1136344-unsplash.jpg
+rename train-car.jpg
+rename truquoise-sea.jpg
