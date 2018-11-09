@@ -33,4 +33,12 @@ Tässä oli tärkeimmät, lisää bindeja ja muuta löytyy
 
 - `.config/sxhkd/sxhkdrc`: keybind config
 - `.config/bspwm/bspwmrc`: bspwm config
-- wifi-yhteyksiä voit muokata `nm-connection-editor`:illa
+
+Tarvittavat ohjelmat
+
+- xorg
+- bspwm
+- sxhkd
+- tint2
+- (pywal värejä varten)
+
