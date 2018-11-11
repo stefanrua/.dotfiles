@@ -4,7 +4,6 @@ sxhkd &
 dunst &
 compton &
 xfce4-panel &
-# tint2 &
 nm-applet &
 wal -R &
 
