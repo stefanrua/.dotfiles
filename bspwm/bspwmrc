@@ -2,7 +2,9 @@
 
 sxhkd &
 dunst &
-tint2 &
+compton &
+xfce4-panel &
+# tint2 &
 nm-applet &
 wal -R &
 
