@@ -1,4 +1,6 @@
-# Pls halp! (sxhkd bindit)
+# Pls halp! (sxhkd bindit ja vähän muuta)
+
+Super = Windows nappi :D (ofc)
 
 ## Ohjelmat
 
@@ -27,7 +29,7 @@
 - **Super + m** = Workspacen inkkunat monocle layouttiin (vain 1
 ikkuna näkyy kerrallaan, mutta layout on pysyy vaikka vaihtaisi ikkunaa, toisin kuin fullscreen state)
 
-## Lisää
+## Muita juduja
 
 Tässä oli tärkeimmät, lisää bindeja ja muuta löytyy
 
@@ -39,6 +41,9 @@ Tarvittavat ohjelmat
 - xorg
 - bspwm
 - sxhkd
-- tint2
-- (pywal värejä varten)
-
+- urxvt
+- rofi
+- xfce4-panel
+- (pywal, värit taustakuvasta)
+- (lxappearance, gtk teemat)
+- (arandr, monitorin valinta / config)

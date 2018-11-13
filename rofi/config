@@ -1,5 +1,5 @@
 rofi.padding: 70
-rofi.font: Roboto Mono 16
+rofi.font: Roboto Mono 18
 rofi.bw: 2
 
 # Dark theme.
