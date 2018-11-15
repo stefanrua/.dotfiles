@@ -2,8 +2,11 @@ rofi.padding: 70
 rofi.font: Roboto Mono 18
 rofi.bw: 2
 
-# Dark theme.
+# Default theme
+# rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+# Dark wal theme.
 rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 
-# Light theme.
+# Light wal theme.
 # rofi.theme: ~/.cache/wal/colors-rofi-light.rasi

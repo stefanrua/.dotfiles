@@ -7,9 +7,15 @@ vim ToLearn
 open_with
 open_with h
 rename sda2
-delete
 open_with 
 rename antoine-boissonot-1136344-unsplash.jpg
 rename train-car.jpg
 rename truquoise-sea.jpg
 open_with cat
+search .con
+search cache
+search .config
+search 
+search .confi
+search .conf
+delete

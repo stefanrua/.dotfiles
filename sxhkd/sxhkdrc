@@ -124,6 +124,9 @@ super + {Left,Down,Up,Right}
 # my own stuff
 #
 
+super + d
+    notify-send "$(date; acpi)"
+
 # brightness
 XF86MonBrightnessDown
     xbacklight -dec 10%

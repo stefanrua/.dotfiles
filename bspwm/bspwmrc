@@ -2,9 +2,9 @@
 
 sxhkd &
 dunst &
-compton &
-xfce4-panel &
-nm-applet &
+# compton &
+# xfce4-panel &
+# nm-applet &
 wal -R &
 
 apu=$HOME/.dotfiles/sxhkd-binds.pdf

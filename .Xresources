@@ -7,7 +7,10 @@ URxvt.scrollBar: false
 ! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.internalBorder: 70
-URxvt.geometry: 50x25
+URxvt.geometry: 80x25
+
+! Set depth to make transparency work.
+URxvt*depth: 32
 
 ! Fonts {{{
 Xft.antialias: true
@@ -17,47 +20,58 @@ Xft.hintstyle: hintfull
 Xft.dpi:       120
 ! }}}
 
-! special
-*.foreground:   #ffffff
-*.background:   #000000
-*.cursorColor:  #ffffff
+! Colors
+*foreground:        #c9c4c4
+*background:        #161315
+*.foreground:       #c9c4c4
+*.background:       #161315
+emacs*foreground:   #c9c4c4
+emacs*background:   #161315
+URxvt*foreground:   #c9c4c4
+XTerm*foreground:   #c9c4c4
+UXTerm*foreground:  #c9c4c4
+URxvt*background:   [100]#161315
+XTerm*background:   #161315
+UXTerm*background:  #161315
+URxvt*cursorColor:  #c9c4c4
+XTerm*cursorColor:  #c9c4c4
+UXTerm*cursorColor: #c9c4c4
+URxvt*borderColor:  [100]#161315
 
-! black
-*.color0:       #000000
-*.color8:       #000000
+! Colors 0-15.
+*.color0: #161315
+*color0:  #161315
+*.color1: #766E6B
+*color1:  #766E6B
+*.color2: #AA2A47
+*color2:  #AA2A47
+*.color3: #887673
+*color3:  #887673
+*.color4: #897F76
+*color4:  #897F76
+*.color5: #8B856F
+*color5:  #8B856F
+*.color6: #948E8F
+*color6:  #948E8F
+*.color7: #c9c4c4
+*color7:  #c9c4c4
+*.color8: #8c8989
+*color8:  #8c8989
+*.color9: #766E6B
+*color9:  #766E6B
+*.color10: #AA2A47
+*color10:  #AA2A47
+*.color11: #887673
+*color11:  #887673
+*.color12: #897F76
+*color12:  #897F76
+*.color13: #8B856F
+*color13:  #8B856F
+*.color14: #948E8F
+*color14:  #948E8F
+*.color15: #c9c4c4
+*color15:  #c9c4c4
 
-! red
-*.color1:       #ffbb00
-*.color9:       #ffbb00
-
-! green
-*.color2:       #ffbb00
-*.color10:      #ffbb00
-
-! yellow
-*.color3:       #ffbb00
-*.color11:      #ffbb00
-
-! blue
-*.color4:       #ffbb00
-*.color12:      #ffbb00
-
-! magenta
-*.color5:       #ffbb00
-*.color13:      #ffbb00
-
-! cyan
-*.color6:       #ffbb00
-*.color14:      #ffbb00
-
-! white
-*.color7:       #aaaaaa
-*.color15:      #aaaaaa
-
-! State:           ´bg´,     ´fg´,     ´bgalt´,  ´hlbg´,   ´hlfg´
-rofi.color-normal: #000000,  #ffffff,  #111111,  #ffbb00,  #000000
-!rofi.color-urgent: #1d1f21,  #dc322f,  #eee8d5,  #dc322f,  #fdf6e3
-!rofi.color-active: #1d1f21,  #268bd2,  #eee8d5,  #268bd2,  #fdf6e3
-
-!                  ´background´, ´border´, ´separator´
-rofi.color-window: #000000,      #ffbb00,  #ffbb00
+! Black color that will not be affected by bold highlighting.
+*.color66: #161315
+*color66:  #161315
