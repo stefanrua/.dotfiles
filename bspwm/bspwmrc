@@ -7,7 +7,7 @@ dunst &
 # nm-applet &
 wal -R &
 
-apu=$HOME/.dotfiles/sxhkd-binds.pdf
+apu=$HOME/.dotfiles/pls-halp.pdf
 
 # avaa apustus-pdf käynnistäessä
 # jos oot tosi fuksi xD

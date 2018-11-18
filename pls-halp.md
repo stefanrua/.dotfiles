@@ -44,6 +44,7 @@ Tarvittavat ohjelmat
 - urxvt
 - rofi
 - xfce4-panel
+- xbacklight
 - (pywal, värit taustakuvasta)
 - (lxappearance, gtk teemat)
 - (arandr, monitorin valinta / config)
