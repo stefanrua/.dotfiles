@@ -20,58 +20,39 @@ Xft.hintstyle: hintfull
 Xft.dpi:       120
 ! }}}
 
-! Colors
-*foreground:        #c9c4c4
-*background:        #161315
-*.foreground:       #c9c4c4
-*.background:       #161315
-emacs*foreground:   #c9c4c4
-emacs*background:   #161315
-URxvt*foreground:   #c9c4c4
-XTerm*foreground:   #c9c4c4
-UXTerm*foreground:  #c9c4c4
-URxvt*background:   [100]#161315
-XTerm*background:   #161315
-UXTerm*background:  #161315
-URxvt*cursorColor:  #c9c4c4
-XTerm*cursorColor:  #c9c4c4
-UXTerm*cursorColor: #c9c4c4
-URxvt*borderColor:  [100]#161315
+! special
+*.foreground:   #565e65
+*.background:   #f3f4f5
+*.cursorColor:  #565e65
 
-! Colors 0-15.
-*.color0: #161315
-*color0:  #161315
-*.color1: #766E6B
-*color1:  #766E6B
-*.color2: #AA2A47
-*color2:  #AA2A47
-*.color3: #887673
-*color3:  #887673
-*.color4: #897F76
-*color4:  #897F76
-*.color5: #8B856F
-*color5:  #8B856F
-*.color6: #948E8F
-*color6:  #948E8F
-*.color7: #c9c4c4
-*color7:  #c9c4c4
-*.color8: #8c8989
-*color8:  #8c8989
-*.color9: #766E6B
-*color9:  #766E6B
-*.color10: #AA2A47
-*color10:  #AA2A47
-*.color11: #887673
-*color11:  #887673
-*.color12: #897F76
-*color12:  #897F76
-*.color13: #8B856F
-*color13:  #8B856F
-*.color14: #948E8F
-*color14:  #948E8F
-*.color15: #c9c4c4
-*color15:  #c9c4c4
+! black
+*.color0:       #1c2023
+*.color8:       #747c84
 
-! Black color that will not be affected by bold highlighting.
-*.color66: #161315
-*color66:  #161315
+! red
+*.color1:       #c7ae95
+*.color9:       #c7ae95
+
+! green
+*.color2:       #95c7ae
+*.color10:      #95c7ae
+
+! yellow
+*.color3:       #aec795
+*.color11:      #aec795
+
+! blue
+*.color4:       #ae95c7
+*.color12:      #ae95c7
+
+! magenta
+*.color5:       #c795ae
+*.color13:      #c795ae
+
+! cyan
+*.color6:       #95aec7
+*.color14:      #95aec7
+
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5

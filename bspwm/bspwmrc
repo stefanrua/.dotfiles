@@ -4,7 +4,8 @@ sxhkd &
 dunst &
 # compton &
 # xfce4-panel &
-# nm-applet &
+tint2 &
+nm-applet &
 wal -R &
 
 apu=$HOME/.dotfiles/pls-halp.pdf
@@ -13,7 +14,7 @@ apu=$HOME/.dotfiles/pls-halp.pdf
 # jos oot tosi fuksi xD
 # mupdf apu || evince apu || okular apu || xpdf apu &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 0001 0010 0011 0100 0101 0110 0111 1000 1001 0000
 
 bspc config border_width         2
 bspc config window_gap           8
