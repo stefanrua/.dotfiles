@@ -124,8 +124,9 @@ super + {Left,Down,Up,Right}
 # my own stuff
 #
 
-super + d
-    notify-send "$(date; acpi)"
+# screenshot
+Print
+    scrot
 
 # brightness
 XF86MonBrightnessDown

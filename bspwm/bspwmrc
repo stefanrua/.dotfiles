@@ -6,7 +6,7 @@ dunst &
 # xfce4-panel &
 tint2 &
 nm-applet &
-wal -R &
+# wal -R &
 
 apu=$HOME/.dotfiles/pls-halp.pdf
 
@@ -18,6 +18,10 @@ bspc monitor -d 0001 0010 0011 0100 0101 0110 0111 1000 1001 0000
 
 bspc config border_width         2
 bspc config window_gap           8
+
+bspc config focused_border_color "#FFFFFF"
+bspc config normal_border_color "#161315"
+bspc config active_border_color "#161315"
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
