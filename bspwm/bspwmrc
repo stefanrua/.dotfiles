@@ -7,12 +7,13 @@ dunst &
 tint2 &
 nm-applet &
 # wal -R &
+feh --bg-fill ~/Pictures/real-space.jpg
 
-apu=$HOME/.dotfiles/pls-halp.pdf
+help=$HOME/.dotfiles/README.pdf
 
 # avaa apustus-pdf käynnistäessä
 # jos oot tosi fuksi xD
-# mupdf apu || evince apu || okular apu || xpdf apu &
+# mupdf help || evince help || okular help || xpdf help &
 
 bspc monitor -d 0001 0010 0011 0100 0101 0110 0111 1000 1001 0000
 

@@ -1,6 +1,6 @@
 # Pls halp! (sxhkd bindit ja vähän muuta)
 
-Super = Windows nappi :D (ofc)
+Super = Windows button :D (ofc)
 
 ## Ohjelmat
 
@@ -43,8 +43,9 @@ Tarvittavat ohjelmat
 - sxhkd
 - urxvt
 - rofi
-- xfce4-panel
+- tint2
 - xbacklight
+- (feh, taustakuva)
 - (pywal, värit taustakuvasta)
 - (lxappearance, gtk teemat)
 - (arandr, monitorin valinta / config)
