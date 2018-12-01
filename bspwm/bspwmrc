@@ -2,12 +2,14 @@
 
 sxhkd &
 dunst &
+wmname LG3D &
 # compton &
 # xfce4-panel &
 tint2 &
-nm-applet &
+# nm-applet &
+# pasystray &
 # wal -R &
-feh --bg-fill ~/Pictures/real-space.jpg
+feh --bg-fill ~/Pictures/backgrounds/real-space.jpg
 
 help=$HOME/.dotfiles/README.pdf
 
@@ -15,7 +17,8 @@ help=$HOME/.dotfiles/README.pdf
 # jos oot tosi fuksi xD
 # mupdf help || evince help || okular help || xpdf help &
 
-bspc monitor -d 0001 0010 0011 0100 0101 0110 0111 1000 1001 0000
+# bspc monitor -d 0001 0010 0011 0100 0101 0110 0111 1000 1001 0000
+bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width         2
 bspc config window_gap           8

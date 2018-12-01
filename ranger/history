@@ -1,4 +1,3 @@
-
 shelq
 ?
 open_with vim
@@ -7,7 +6,6 @@ vim ToLearn
 open_with
 open_with h
 rename sda2
-open_with 
 rename antoine-boissonot-1136344-unsplash.jpg
 rename train-car.jpg
 rename truquoise-sea.jpg
@@ -19,3 +17,10 @@ search
 search .confi
 search .conf
 delete
+rename TODOq
+open_with 
+open_with /bin/bash
+open_with bash
+
+shell ./AdventureTextUI
+shell ./AdventureTextUI.class

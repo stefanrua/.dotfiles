@@ -45,6 +45,8 @@ Tarvittavat ohjelmat
 - rofi
 - tint2
 - xbacklight
+- (nm-applet, ezpz wifi control)
+- (pasystray, ezpz audio thingy)
 - (feh, taustakuva)
 - (pywal, värit taustakuvasta)
 - (lxappearance, gtk teemat)
