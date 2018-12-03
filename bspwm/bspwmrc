@@ -9,7 +9,8 @@ tint2 &
 # nm-applet &
 # pasystray &
 # wal -R &
-feh --bg-fill ~/Pictures/backgrounds/real-space.jpg
+# feh --bg-fill ~/Pictures/backgrounds/real-space.jpg
+xsetroot -solid "light coral"
 
 help=$HOME/.dotfiles/README.pdf
 
