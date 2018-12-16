@@ -124,9 +124,13 @@ super + {Left,Down,Up,Right}
 # my own stuff
 #
 
+# send time & battery status
+super + d
+    notify-send "$(date "+%H:%M") /$(acpi | cut -d, -f2)"
+
 # screenshot
 Print
-    scrot
+    scrot; notify-send "screenshot captured"
 
 # brightness
 XF86MonBrightnessDown

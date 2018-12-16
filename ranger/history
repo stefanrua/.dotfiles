@@ -16,7 +16,6 @@ search .config
 search 
 search .confi
 search .conf
-delete
 rename TODOq
 open_with 
 open_with /bin/bash
@@ -24,3 +23,5 @@ open_with bash
 
 shell ./AdventureTextUI
 shell ./AdventureTextUI.class
+delete
+rename 2018-12-04-term.png

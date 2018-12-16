@@ -1,4 +1,5 @@
-URxvt.font:xft:Roboto Mono:size=12
+!URxvt.font:xft:Roboto Mono:size=12
+URxvt.font:xft:Terminus:size=12
 ! URxvt.letterSpace: -5
 URxvt.scrollBar: false
 ! URxvt.transparent: true
@@ -6,7 +7,7 @@ URxvt.scrollBar: false
 ! URxvt.cursorColor: #F8F8F2
 ! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
-URxvt.internalBorder: 70
+URxvt.internalBorder: 64
 URxvt.geometry: 50x25
 
 ! Set depth to make transparency work.
