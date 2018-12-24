@@ -6,7 +6,9 @@ From now on what you may call "the Windows button" will be called "Super".
 ## Start programs
 
 - **Super + Enter** = Terminal (`urxvt`)
-- **Super + Space** = App launcher (`rofi`)
+- **Super + Space** = Program launcher (`rofi`)
+- **Super + d** = Show a notification
+with the time and battery percentage
 
 ## Quit
 
