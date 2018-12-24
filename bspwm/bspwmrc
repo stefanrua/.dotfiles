@@ -2,20 +2,13 @@
 
 sxhkd &
 dunst &
-wmname LG3D &
-# compton &
-# xfce4-panel &
-# tint2 &
-# nm-applet &
-# pasystray &
-# wal -R &
+wmname LG3D & # Android SDK GUI fails without this
 feh --bg-fill Pictures/backgrounds/mountain-autumn.jpg
-xsetroot -solid "slate gray"
+# xsetroot -solid "slate gray"
 
 help=$HOME/.dotfiles/README.pdf
 
-# avaa apustus-pdf käynnistäessä
-# jos oot tosi fuksi xD
+# Open the help pdf on startup
 # mupdf help || evince help || okular help || xpdf help &
 
 # bspc monitor -d 0001 0010 0011 0100 0101 0110 0111 1000 1001 0000
@@ -32,5 +25,4 @@ bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-# bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
