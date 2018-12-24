@@ -1,5 +1,5 @@
-!URxvt.font:xft:Roboto Mono:size=12
-URxvt.font:xft:Terminus:size=12
+URxvt.font:xft:Roboto Mono:size=12
+! URxvt.font:xft:Terminus:size=12
 ! URxvt.letterSpace: -5
 URxvt.scrollBar: false
 ! URxvt.transparent: true
@@ -21,39 +21,59 @@ Xft.hintstyle: hintfull
 Xft.dpi:       120
 ! }}}
 
-! special
+!
+! chalk
+!
+
 *.foreground:   #ffffff
 *.background:   #151515
 *.cursorColor:  #ffffff
-
-! black
 *.color0:       #151515
 *.color8:       #505050
-
-! red
 *.color1:       #fb9fb1
 *.color9:       #fb9fb1
-
-! green
 *.color2:       #acc267
 *.color10:      #acc267
-
-! yellow
 *.color3:       #ddb26f
 *.color11:      #ddb26f
-
-! blue
 *.color4:       #6fc2ef
 *.color12:      #6fc2ef
-
-! magenta
 *.color5:       #e1a3ee
 *.color13:      #e1a3ee
-
-! cyan
 *.color6:       #12cfc0
 *.color14:      #12cfc0
-
-! white
 *.color7:       #d0d0d0
 *.color15:      #f5f5f5
+
+!
+! gruvbox
+!
+
+!! hard contrast: *background: #1d2021
+!*background: #282828
+!! soft contrast: *background: #32302f
+!*foreground: #ebdbb2
+!! Black + DarkGrey
+!*color0:  #282828
+!*color8:  #928374
+!! DarkRed + Red
+!*color1:  #cc241d
+!*color9:  #fb4934
+!! DarkGreen + Green
+!*color2:  #98971a
+!*color10: #b8bb26
+!! DarkYellow + Yellow
+!*color3:  #d79921
+!*color11: #fabd2f
+!! DarkBlue + Blue
+!*color4:  #458588
+!*color12: #83a598
+!! DarkMagenta + Magenta
+!*color5:  #b16286
+!*color13: #d3869b
+!! DarkCyan + Cyan
+!*color6:  #689d6a
+!*color14: #8ec07c
+!! LightGrey + White
+!*color7:  #a89984
+!*color15: #ebdbb2

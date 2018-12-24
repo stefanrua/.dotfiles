@@ -9,7 +9,7 @@ wmname LG3D &
 # nm-applet &
 # pasystray &
 # wal -R &
-# feh --bg-fill ~/Pictures/backgrounds/real-space.jpg
+feh --bg-fill Pictures/backgrounds/mountain-autumn.jpg
 xsetroot -solid "slate gray"
 
 help=$HOME/.dotfiles/README.pdf
