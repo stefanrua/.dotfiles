@@ -149,3 +149,11 @@ XF86AudioLowerVolume
 # mute
 XF86AudioMute
     pactl set-sink-mute 0 toggle
+
+# set gaps to "big" (64 px)
+super + shift + b
+    bspc config window_gap 64
+
+# set gaps to "normal" (8 px)
+super + shift + n
+    bspc config window_gap 8

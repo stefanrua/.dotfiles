@@ -4,7 +4,7 @@ URxvt.font:xft:Roboto Mono:size=12
 URxvt.scrollBar: false
 ! URxvt.transparent: true
 ! URxvt.blurRadius: 50
-! URxvt.cursorColor: #F8F8F2
+URxvt.cursorColor: #FFFFFF
 ! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.internalBorder: 64
@@ -22,58 +22,122 @@ Xft.dpi:       120
 ! }}}
 
 !
-! chalk
+! lovelace
 !
 
-*.foreground:   #ffffff
-*.background:   #151515
-*.cursorColor:  #ffffff
-*.color0:       #151515
-*.color8:       #505050
-*.color1:       #fb9fb1
-*.color9:       #fb9fb1
-*.color2:       #acc267
-*.color10:      #acc267
-*.color3:       #ddb26f
-*.color11:      #ddb26f
-*.color4:       #6fc2ef
-*.color12:      #6fc2ef
-*.color5:       #e1a3ee
-*.color13:      #e1a3ee
-*.color6:       #12cfc0
-*.color14:      #12cfc0
-*.color7:       #d0d0d0
-*.color15:      #f5f5f5
+!*background:	#1D1F28
+!*foreground:	#FDFDFD
+!!*cursorColor:	#C574DD
+!*color0:	#282A36
+!*color1:	#F37F97
+!*color2:	#5ADECD
+!*color3:	#F2A272
+!*color4:	#8897F4
+!*color5:	#C574DD
+!*color6:	#79E6F3
+!*color7:	#FDFDFD
+!*color8:	#414458
+!*color9:	#FF4971
+!*color10:	#18E3C8
+!*color11:	#FF8037
+!*color12:	#556FFF
+!*color13:	#B043D1
+!*color14:	#3FDCEE
+!*color15:	#BEBEC1
+
+! chalk
+
+!*.foreground:   #ffffff
+!*.background:   #151515
+!*.cursorColor:  #ffffff
+!*.color0:       #151515
+!*.color8:       #505050
+!*.color1:       #fb9fb1
+!*.color9:       #fb9fb1
+!*.color2:       #acc267
+!*.color10:      #acc267
+!*.color3:       #ddb26f
+!*.color11:      #ddb26f
+!*.color4:       #6fc2ef
+!*.color12:      #6fc2ef
+!*.color5:       #e1a3ee
+!*.color13:      #e1a3ee
+!*.color6:       #12cfc0
+!*.color14:      #12cfc0
+!*.color7:       #d0d0d0
+!*.color15:      #f5f5f5
 
 !
 ! gruvbox
 !
 
-!! hard contrast: *background: #1d2021
-!*background: #282828
-!! soft contrast: *background: #32302f
-!*foreground: #ebdbb2
-!! Black + DarkGrey
-!*color0:  #282828
-!*color8:  #928374
-!! DarkRed + Red
-!*color1:  #cc241d
-!*color9:  #fb4934
-!! DarkGreen + Green
-!*color2:  #98971a
-!*color10: #b8bb26
-!! DarkYellow + Yellow
-!*color3:  #d79921
-!*color11: #fabd2f
-!! DarkBlue + Blue
-!*color4:  #458588
-!*color12: #83a598
-!! DarkMagenta + Magenta
-!*color5:  #b16286
-!*color13: #d3869b
-!! DarkCyan + Cyan
-!*color6:  #689d6a
-!*color14: #8ec07c
-!! LightGrey + White
-!*color7:  #a89984
-!*color15: #ebdbb2
+! hard contrast:
+*background: #1d2021
+! medium contrast: *background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+
+!
+! zenburn
+!
+
+!! special
+!*.foreground:   #ffffff
+!*.background:   #000000
+!*.cursorColor:  #ffffff
+!
+!! black
+!*.color0:       #1e2320
+!*.color8:       #709080
+!
+!! red
+!*.color1:       #705050
+!*.color9:       #dca3a3
+!
+!! green
+!*.color2:       #60b48a
+!*.color10:      #c3bf9f
+!
+!! yellow
+!*.color3:       #dfaf8f
+!*.color11:      #f0dfaf
+!
+!! blue
+!*.color4:       #506070
+!*.color12:      #94bff3
+!
+!! magenta
+!*.color5:       #dc8cc3
+!*.color13:      #ec93d3
+!
+!! cyan
+!*.color6:       #8cd0d3
+!*.color14:      #93e0e3
+!
+!! white
+!*.color7:       #dcdccc
+!*.color15:      #ffffff

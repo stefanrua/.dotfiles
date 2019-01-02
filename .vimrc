@@ -21,4 +21,5 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
 set clipboard=unnamedplus
 
-" let g:ycm_show_diagnostics_ui = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:ycm_show_diagnostics_ui = 0
