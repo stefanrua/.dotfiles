@@ -70,6 +70,7 @@ keywords using `/`). Is the man page stream of conciousness garbage? Google it.
 - `tint2` (panel)
 - `chromium` (web browser)
 - `gimp` (image editor)
+- `imagemagick` (smaller image editing tools)
 - `texlive` (LaTeX)
 - `pandoc` (file conversion)
 
