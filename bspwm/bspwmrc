@@ -3,8 +3,8 @@
 sxhkd &
 dunst &
 wmname LG3D & # Android SDK GUI fails without this
-feh --bg-fill Pictures/backgrounds/dark-brown-buildings.jpg
-# xsetroot -solid "slate gray"
+# feh --bg-fill Pictures/backgrounds/dark-forest.jpg
+xsetroot -solid "slate gray"
 
 help=$HOME/.dotfiles/README.pdf
 
@@ -16,7 +16,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config normal_border_color '#444444'
 bspc config active_border_color '#444444'
-bspc config focused_border_color '#ffffff'
+bspc config focused_border_color '#d79921'
 
 bspc config border_width         8
 bspc config window_gap           8

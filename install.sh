@@ -1,6 +1,6 @@
 #! /bin/bash
 
-programs="bspwm sxhkd rofi dunst ranger tint2"
+programs="nvim bspwm sxhkd rofi dunst"
 
 ln -s $PWD/.Xresources $HOME/
 
