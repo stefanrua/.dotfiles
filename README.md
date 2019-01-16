@@ -47,6 +47,7 @@ keywords using `/`). Is the man page stream of conciousness garbage? Google it.
 
 - `xorg`
 - `nvim` (text editor)
+- `emacs` (text editor)
 - `bspwm` (window manager)
 - `sxhkd` (hotkey daemon)
 - `urxvt` (terminal)

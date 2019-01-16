@@ -7,7 +7,13 @@ set autoindent
 set nowrap                " don't wrap text
 set shiftround            " always indent/outdent to the nearest tabstop
 set number                " show line numbers
-set scrolloff=8
+" set scrolloff=8
+
+" Move by visual (instead of logical) lines vertically
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
