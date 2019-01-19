@@ -32,7 +32,9 @@ There are two things you can do about this warning:
  '(custom-safe-themes
    (quote
     ("7f89ec3c988c398b88f7304a75ed225eaac64efa8df3638c815acc563dfd3b55" default)))
- '(package-selected-packages (quote (flycheck markdown-mode nav gruvbox-theme))))
+ '(package-selected-packages
+   (quote
+    (undo-tree flycheck markdown-mode nav gruvbox-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
