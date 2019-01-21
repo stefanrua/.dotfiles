@@ -1,6 +1,7 @@
 rofi.padding: 64
-rofi.font: Roboto Mono 18
-! rofi.font: Terminus 15
+rofi.font: Roboto Mono 16
+! rofi.font: Monospace 12
+! rofi.font: Terminus 12
 rofi.bw: 2
 
 rofi.lines: 4

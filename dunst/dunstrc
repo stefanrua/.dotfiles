@@ -85,7 +85,8 @@
 
     ### Text ###
 
-    font = Roboto 12
+    font = Roboto 16
+    # font = Monospace 12
     # font = Terminus 12
 
     # The spacing between lines.  If the height is smaller than the
