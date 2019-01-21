@@ -1,5 +1,3 @@
-;; GO TO LINE 44 FOR THE MORE INTERESTING STUFF
-
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
@@ -28,13 +26,26 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#3c3836" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
  '(custom-enabled-themes (quote (gruvbox)))
  '(custom-safe-themes
    (quote
-    ("7f89ec3c988c398b88f7304a75ed225eaac64efa8df3638c815acc563dfd3b55" default)))
+    ("e2fd81495089dc09d14a88f29dfdff7645f213e2c03650ac2dd275de52a513de" "a622aaf6377fe1cd14e4298497b7b2cae2efc9e0ce362dade3a58c16c89e089c" "bf5bdab33a008333648512df0d2b9d9710bdfba12f6a768c7d2c438e1092b633" "2642a1b7f53b9bb34c7f1e032d2098c852811ec2881eec2dc8cc07be004e45a0" "bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "7f89ec3c988c398b88f7304a75ed225eaac64efa8df3638c815acc563dfd3b55" default)))
+ '(fci-rule-color "#3E4451")
+ '(nav-width 23)
  '(package-selected-packages
    (quote
-    (undo-tree flycheck markdown-mode nav gruvbox-theme))))
+    (magit atom-dark-theme atom-one-dark-theme monokai-theme undo-tree flycheck markdown-mode nav gruvbox-theme)))
+ '(pdf-view-midnight-colors (quote ("#fdf4c1" . "#32302f")))
+ '(tetris-x-colors
+   [[229 192 123]
+    [97 175 239]
+    [209 154 102]
+    [224 108 117]
+    [152 195 121]
+    [198 120 221]
+    [86 182 194]]))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

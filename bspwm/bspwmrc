@@ -4,8 +4,8 @@ sxhkd &
 dunst &
 # xfce4-panel &
 wmname LG3D & # Android SDK GUI fails without this
-feh --bg-fill Pictures/backgrounds/mountain-autumn.jpg &
 compton -c &
+feh --bg-fill Pictures/backgrounds/ronja-laivalla.jpg
 xsetroot -solid "slate gray"
 
 help=$HOME/.dotfiles/README.pdf

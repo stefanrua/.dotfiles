@@ -7,7 +7,7 @@ URxvt.scrollBar: false
 URxvt.cursorColor: #FFFFFF
 ! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
-URxvt.internalBorder: 32
+URxvt.internalBorder: 8
 URxvt.geometry: 50x25
 
 ! Set depth to make transparency work.
