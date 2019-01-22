@@ -85,7 +85,7 @@
 
     ### Text ###
 
-    font = Roboto 16
+    font = Roboto 12
     # font = Monospace 12
     # font = Terminus 12
 

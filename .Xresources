@@ -1,6 +1,6 @@
 ! URxvt.font:xft:Monospace:size=12
 ! URxvt.font:xft:Terminus:size=12
-Rxvt.font:xft:Roboto Mono:size=16
+Rxvt.font:xft:Roboto Mono:size=12
 ! URxvt.letterSpace: -4
 URxvt.scrollBar: false
 ! URxvt.transparent: true
@@ -19,7 +19,7 @@ Xft.antialias: true
 Xft.hinting:   true
 Xft.rgba:      rgb
 Xft.hintstyle: hintfull
-! Xft.dpi:       120
+Xft.dpi:       120
 
 !
 ! lovelace

@@ -1,20 +1,22 @@
 # Pls halp!
 
+## Window manager kebinds
+
 Here are the essential binds for navigating in `bspwm` (your window manager) using `sxhkd` (your hotkey daemon).
 From now on what you may call "the Windows button" will be called "Super".
 
-## Start programs
+### Start programs
 
 - **Super + Enter** = Terminal (`urxvt`)
 - **Super + Space** = Program launcher (`rofi`)
 - **Super + d** = Show a notification
 with the time and battery percentage
 
-## Quit
+### Quit
 
 - **Super + Alt + Esc** = Exit `bspwm`
 
-## Manage windows
+### Manage windows
 
 - **Super + w** = Close window
 - **Super + {h, j, k, l}** = Focus window {left, down, up, right}
@@ -29,8 +31,13 @@ with the time and battery percentage
 - **Super + {t, s, f}** = Set the focused window to {tiling, floating, fullscreen} state
 - **Super + m** = Monocle layout (display only one window at a time, fullscreen)
 
-## More config
+## Configuration
 
+### Fonts
+
+Font size wille be affected by `Xft.dpi:` in `.Xresources`, which you might want to turn off on normal DPI monitors. All used fonts are in the config files `dunst/dunstrc`, `rofi/config`, `.Xresources`, and `tint2/tint2rc` if you use the panel. There are commented out lines with the font "Monospace" in case you don't have my currently used fonts installed.
+
+### Window manager
 - `.config/sxhkd/sxhkdrc`: keybind config
 - `.config/bspwm/bspwmrc`: bspwm config
 
@@ -46,7 +53,7 @@ keywords using `/`). Is the man page stream of conciousness garbage? Google it.
 ### General
 
 - `xorg`
-- `nvim` (text editor)
+- `vim` (text editor)
 - `emacs` (text editor)
 - `bspwm` (window manager)
 - `sxhkd` (hotkey daemon)
