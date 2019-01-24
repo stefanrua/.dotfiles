@@ -1,6 +1,7 @@
 ! URxvt.font:xft:Monospace:size=12
 ! URxvt.font:xft:Terminus:size=12
-Rxvt.font:xft:Roboto Mono:size=12
+! Rxvt.font:xft:Roboto Mono:size=12
+Rxvt.font:xft:Inconsolata:size=14
 ! URxvt.letterSpace: -4
 URxvt.scrollBar: false
 ! URxvt.transparent: true
