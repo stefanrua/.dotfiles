@@ -16,7 +16,6 @@ nnoremap <C-H> <C-W><C-H>
 " space open/closes folds
 nnoremap <space> za
 
-" colorscheme desert          " nice colors
 syntax enable               " enable syntax higlighting
 
 set expandtab               " tabs are spaces
