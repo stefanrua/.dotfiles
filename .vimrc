@@ -16,7 +16,7 @@ nnoremap <C-H> <C-W><C-H>
 " space open/closes folds
 nnoremap <space> za
 
-colorscheme desert          " nice colors
+" colorscheme desert          " nice colors
 syntax enable               " enable syntax higlighting
 
 set expandtab               " tabs are spaces
@@ -35,7 +35,6 @@ set nowrap                  " don't wrap long lines
 " set cursorline	        " highlight current line
 set wildmenu                " visual autocomplete for command menu
 set lazyredraw              " redraw only when we need to.
-set showmatch               " highlight matching [{()}]
 
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
