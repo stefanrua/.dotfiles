@@ -1,19 +1,14 @@
 ! URxvt.font:xft:Monospace:size=12
 ! URxvt.font:xft:Terminus:size=12
-! Rxvt.font:xft:Roboto Mono:size=12
-Rxvt.font:xft:Inconsolata:size=14
+Rxvt.font:xft:Roboto Mono:size=12
+! Rxvt.font:xft:Inconsolata:size=14
 ! URxvt.letterSpace: -4
 URxvt.scrollBar: false
-! URxvt.transparent: true
-! URxvt.blurRadius: 50
-URxvt.cursorColor: #FFFFFF
+! URxvt.cursorColor: #FFFFFF
 ! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
-URxvt.internalBorder: 32
+URxvt.internalBorder: 16
 URxvt.geometry: 50x25
-
-! Set depth to make transparency work.
-URxvt*depth: 32
 
 ! Fonts
 Xft.antialias: true
@@ -22,62 +17,109 @@ Xft.rgba:      rgb
 Xft.hintstyle: hintfull
 Xft.dpi:       120
 
-!
-! lovelace
-!
+!!! lovelace
+!*background:	#1D1F28
+!*foreground:	#FDFDFD
+!*cursorColor:	#C574DD
+!*color0:	#282A36
+!*color1:	#F37F97
+!*color2:	#5ADECD
+!*color3:	#F2A272
+!*color4:	#8897F4
+!*color5:	#C574DD
+!*color6:	#79E6F3
+!*color7:	#FDFDFD
+!*color8:	#414458
+!*color9:	#FF4971
+!*color10:	#18E3C8
+!*color11:	#FF8037
+!*color12:	#556FFF
+!*color13:	#B043D1
+!*color14:	#3FDCEE
+!*color15:	#BEBEC1
 
-! *background:	#1D1F28
-! *foreground:	#FDFDFD
-! !*cursorColor:	#C574DD
-! *color0:	#282A36
-! *color1:	#F37F97
-! *color2:	#5ADECD
-! *color3:	#F2A272
-! *color4:	#8897F4
-! *color5:	#C574DD
-! *color6:	#79E6F3
-! *color7:	#FDFDFD
-! *color8:	#414458
-! *color9:	#FF4971
-! *color10:	#18E3C8
-! *color11:	#FF8037
-! *color12:	#556FFF
-! *color13:	#B043D1
-! *color14:	#3FDCEE
-! *color15:	#BEBEC1
+!!! gruvbox
+!! hard contrast: *background: #1d2021
+!! medium contrast:
+!*background: #282828
+!! soft contrast: *background: #32302f
+!*foreground: #ebdbb2
+!*color0:  #282828
+!*color8:  #928374
+!*color1:  #cc241d
+!*color9:  #fb4934
+!*color2:  #98971a
+!*color10: #b8bb26
+!*color3:  #d79921
+!*color11: #fabd2f
+!*color4:  #458588
+!*color12: #83a598
+!*color5:  #b16286
+!*color13: #d3869b
+!*color6:  #689d6a
+!*color14: #8ec07c
+!*color7:  #a89984
+!*color15: #ebdbb2
 
-!
-! gruvbox
-!
+!!! tomorrow
+!*.foreground:   #c5c8c6
+!*.background:   #1d1f21
+!*.cursorColor:  #c5c8c6
+!*.color0:       #1d1f21
+!*.color8:       #969896
+!*.color1:       #cc6666
+!*.color9:       #cc6666
+!*.color2:       #b5bd68
+!*.color10:      #b5bd68
+!*.color3:       #f0c674
+!*.color11:      #f0c674
+!*.color4:       #81a2be
+!*.color12:      #81a2be
+!*.color5:       #b294bb
+!*.color13:      #b294bb
+!*.color6:       #8abeb7
+!*.color14:      #8abeb7
+!*.color7:       #c5c8c6
+!*.color15:      #ffffff
 
-! hard contrast:
-! *background: #1d2021
-! medium contrast:
-*background: #282828
-! soft contrast:
-! *background: #32302f
-*foreground: #ebdbb2
-! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
-! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
-! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
-! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
-! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
-! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
-! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
-! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
+!!! hund
+!*.foreground:   #ffffff
+!*.background:   #161616
+!*.cursorColor:  #ffffff
+!*.color0:       #222222
+!*.color8:       #666666
+!*.color1:       #e84f4f
+!*.color9:       #d23d3d
+!*.color2:       #b7ce42
+!*.color10:      #bde077
+!*.color3:       #fea63c
+!*.color11:      #ffe863
+!*.color4:       #66aabb
+!*.color12:      #aaccbb
+!*.color5:       #b7416e
+!*.color13:      #e16a98
+!*.color6:       #6d878d
+!*.color14:      #42717b
+!*.color7:       #dddddd
+!*.color15:      #cccccc
+
+! s3r0-modified
+*.foreground:   #c0b18b
+*.background:   #1f1f1f
+*.cursorColor:  #c0b18b
+*.color0:       #4a3637
+*.color8:       #4a3637
+*.color1:       #d17b49
+*.color9:       #d17b49
+*.color2:       #7b8748
+*.color10:      #7b8748
+*.color3:       #af865a
+*.color11:      #af865a
+*.color4:       #535c5c
+*.color12:      #535c5c
+*.color5:       #775759
+*.color13:      #775759
+*.color6:       #6d715e
+*.color14:      #6d715e
+*.color7:       #c0b18b
+*.color15:      #c0b18b
