@@ -24,8 +24,6 @@ set softtabstop=4           " number of spaces in tab when editing
 set shiftwidth=4            " number of spaces when shifting
 set shiftround              " Always indent/outdent to the nearest tabstop
 set smartindent             " indent intelligently (maybe)
-" set autoindent              " indent next line similarly to the previous one
-" filetype indent on          " load filetype-specific indent files
 
 set number                  " show line numbers
 set showcmd                 " show command in bottom bar
@@ -34,6 +32,7 @@ set nowrap                  " don't wrap long lines
 " set cursorline	        " highlight current line
 set wildmenu                " visual autocomplete for command menu
 set lazyredraw              " redraw only when we need to.
+set scrolloff=8             " scroll when the cursor gets close to the edge
 
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
@@ -44,3 +43,11 @@ set foldenable              " enable folding
 set foldlevelstart=10       " open most folds by default
 set foldnestmax=10          " 10 nested fold max
 set foldmethod=indent       " fold based on indent level
+
+" call plug#begin('./vim/plugged')
+
+" Plug 'junegunn/seoul256.vim'
+
+" call plug#end()
+
+colorscheme default
