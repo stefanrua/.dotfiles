@@ -157,3 +157,7 @@ super + shift + b
 # set gaps to "normal" (8 px)
 super + shift + n
     bspc config window_gap 8
+
+# set gaps to "tiny" (0 px)
+super + shift + m
+    bspc config window_gap 0

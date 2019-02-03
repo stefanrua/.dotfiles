@@ -3,9 +3,8 @@
 sxhkd &
 dunst &
 wmname LG3D & # Android SDK GUI fails without this
-compton -c &
-# feh --bg-fill Pictures/backgrounds/ronja-laivalla.jpg &
-wal -R
+feh --bg-fill Pictures/backgrounds/ronja-laivalla.jpg &
+# wal -R
 
 help=$HOME/.dotfiles/README.pdf
 

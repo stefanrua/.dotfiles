@@ -36,7 +36,7 @@ There are two things you can do about this warning:
  '(nav-width 23)
  '(package-selected-packages
    (quote
-    (magit atom-dark-theme atom-one-dark-theme monokai-theme undo-tree flycheck markdown-mode nav gruvbox-theme)))
+    (magit monokai-theme undo-tree flycheck markdown-mode nav gruvbox-theme)))
  '(pdf-view-midnight-colors (quote ("#fdf4c1" . "#32302f")))
  '(tetris-x-colors
    [[229 192 123]

@@ -18,7 +18,8 @@ nnoremap <space> za
 
 syntax enable               " enable syntax higlighting
 
-set expandtab               " tabs are spaces
+" set noexpandtab             " use tabs, not spaces
+set expandtab				" use spaces, not tabs
 set tabstop=4               " number of visual spaces per TAB
 set softtabstop=4           " number of spaces in tab when editing
 set shiftwidth=4            " number of spaces when shifting
@@ -44,10 +45,10 @@ set foldlevelstart=10       " open most folds by default
 set foldnestmax=10          " 10 nested fold max
 set foldmethod=indent       " fold based on indent level
 
-" call plug#begin('./vim/plugged')
+set t_Co=16                 " Use base 16 colors (from .Xresources)
+" colorscheme default
 
-" Plug 'junegunn/seoul256.vim'
+call plug#begin('./vim/plugged')
+Plug 'scrooloose/nerdtree'
+call plug#end()
 
-" call plug#end()
-
-colorscheme default
