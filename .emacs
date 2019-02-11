@@ -34,7 +34,9 @@ There are two things you can do about this warning:
     ("595617a3c537447aa7e76ce05c8d43146a995296ea083211225e7efc069c598f" "ed17fef69db375ae1ced71fdc12e543448827aac5eb7166d2fd05f4c95a7be71" "6515fcc302292f29a94f6ac0c5795c57a396127d5ea31f37fc5f9f0308bbe19f" "5a45c8bf60607dfa077b3e23edfb8df0f37c4759356682adf7ab762ba6b10600" "e2fd81495089dc09d14a88f29dfdff7645f213e2c03650ac2dd275de52a513de" "a622aaf6377fe1cd14e4298497b7b2cae2efc9e0ce362dade3a58c16c89e089c" "bf5bdab33a008333648512df0d2b9d9710bdfba12f6a768c7d2c438e1092b633" "2642a1b7f53b9bb34c7f1e032d2098c852811ec2881eec2dc8cc07be004e45a0" "bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "7f89ec3c988c398b88f7304a75ed225eaac64efa8df3638c815acc563dfd3b55" default)))
  '(fci-rule-color "#3E4451")
  '(nav-width 35)
- '(package-selected-packages (quote (nofrils-acme-theme undo-tree nav gruvbox-theme)))
+ '(package-selected-packages
+   (quote
+    (diff-hl nofrils-acme-theme undo-tree nav gruvbox-theme)))
  '(pdf-view-midnight-colors (quote ("#fdf4c1" . "#32302f")))
  '(show-paren-mode t)
  '(tetris-x-colors
@@ -57,8 +59,12 @@ There are two things you can do about this warning:
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+(global-hl-line-mode 1) ;; Highlight current line
+(global-diff-hl-mode 1) ;; Highlight diffs
+
 (set-default-font "Inconsolata 14")
 (global-linum-mode 1) ;; Add line numbers
+(setq vc-follow-symlinks t) ;; Follow symlink automatically
 (setq show-paren-delay 0) ;; Remove delay from showing parens / KEEP THIS BEFORE show-paren-mode
 (show-paren-mode 1) ;; Show matching parens
 (set-default 'truncate-lines t) ;; Remove line wrap
