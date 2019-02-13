@@ -1,22 +1,31 @@
-# autostart
-exec ~/.screenlayout/work.sh
-exec dunst
-# exec feh --bg-fill Pictures/takeuchi-polar-bear-wallpaper.png
+# font
+set $font Roboto
+set $size 11
 
-# The ~/.Xresources should contain a line such as
-#     *color0: #121212
-# and must be loaded properly, e.g., by using
-#     xrdb ~/.Xresources
-set_from_resource $black i3wm.color0 #444444
-set_from_resource $white i3wm.color7 #FFFFFF
-set_from_resource $red i3wm.color1 #cc6666
+# colors
+set_from_resource $fg i3wm.color7 #ffffff
+set_from_resource $bg i3wm.color0 #000000
+set_from_resource $gray i3wm.color8 #444444
+set_from_resource $red i3wm.color1 #ff0000
+
+# class                 border  backgr. text indicator child_border
+client.focused          $fg     $fg     $bg  $fg       $fg
+client.focused_inactive $gray   $gray   $bg  $gray     $gray
+client.unfocused        $gray   $gray   $bg  $gray     $gray
+client.urgent           $red    $red    $bg  $red      $red
+client.placeholder      $gray   $gray   $bg  $gray     $gray
+
+client.background       $bg
 
 # set $mod to super
 set $mod Mod4
 
+# autostart
+exec_always dunst -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$red" -lf "$fg" -nf "$fg" -cf "$bg" "400x60-36+36" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Roboto 11
+font pango: $font $size
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -40,8 +49,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 # take screenshot
 bindsym Print exec scrot; exec notify-send "screenshot captured"
 
-# start rofi (a program launcer)
-bindsym $mod+space exec rofi -show run
+# start dmenu (a program launcer)
+bindsym $mod+d exec dmenu_run -nb "$bg" -nf "$fg" -sb "$red" -sf "$bg" -fn "$font-$size"
 
 # change focus
 bindsym $mod+h focus left
@@ -80,6 +89,9 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -170,30 +182,16 @@ bindsym $mod+p mode "[s]uspend [p]oweroff [h]ibernate"
 # finds out, if available)
 bar {
     status_command i3status
+    separator_symbol "   "
     colors {
-        background $black
-        statusline $white
-        separator $white
+        background $bg
+        statusline $fg
+        separator $fg
 
-        focused_workspace  $white $white $black
-        active_workspace   $black $black $white
-        inactive_workspace $black $black $white
-        urgent_workspace   $black $black $white
-        binding_mode       $red $red $white
+        focused_workspace  $fg $fg $bg
+        active_workspace   $bg $bg $fg
+        inactive_workspace $bg $bg $fg
+        urgent_workspace   $red $red $bg
+        binding_mode       $red $red $bg
     }
 }
-
-#
-# COLORS
-#
-
-# default_border normal 2
-
-# class                 border  backgr. text    indicator child_border
-client.focused          $white  $white  $black  $white    $white
-client.focused_inactive $black  $black  $white  $black    $black
-client.unfocused        $black  $black  $white  $black    $black
-client.urgent           $black  $black  $white  $black    $black
-client.placeholder      $black  $black  $white  $black    $black
-
-client.background       #ffffff
