@@ -1,6 +1,6 @@
 # autostart
 exec dunst
-exec feh --bg-fill Pictures/takeuchi-polar-bear-wallpaper.png
+# exec feh --bg-fill Pictures/takeuchi-polar-bear-wallpaper.png
 
 # set $mod to super
 set $mod Mod4
@@ -145,6 +145,17 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+mode "[s]uspend [p]oweroff [h]ibernate" {
+     bindsym s exec systemctl suspend
+     bindsym p exec systemctl poweroff
+     bindsym h exec systemctl hibernate
+     bindsym Return mode "default"
+     bindsym Escape mode "default"
+     bindsym $mod+r mode "default"
+}
+
+bindsym $mod+p mode "[s]uspend [p]oweroff [h]ibernate"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
