@@ -167,7 +167,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-mode "[s]uspend [p]oweroff [h]ibernate" {
+mode "[s]uspend [h]ibernate [p]oweroff" {
      bindsym s mode "default"; exec systemctl suspend
      bindsym p mode "default"; exec systemctl poweroff
      bindsym h mode "default"; exec systemctl hibernate
@@ -176,7 +176,7 @@ mode "[s]uspend [p]oweroff [h]ibernate" {
      bindsym $mod+r mode "default"
 }
 
-bindsym $mod+p mode "[s]uspend [p]oweroff [h]ibernate"
+bindsym $mod+p mode "[s]uspend [h]ibernate [p]oweroff"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
