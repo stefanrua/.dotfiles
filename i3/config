@@ -1,6 +1,15 @@
 # autostart
+exec ~/.screenlayout/work.sh
 exec dunst
 # exec feh --bg-fill Pictures/takeuchi-polar-bear-wallpaper.png
+
+# The ~/.Xresources should contain a line such as
+#     *color0: #121212
+# and must be loaded properly, e.g., by using
+#     xrdb ~/.Xresources
+set_from_resource $black i3wm.color0 #444444
+set_from_resource $white i3wm.color7 #FFFFFF
+set_from_resource $red i3wm.color1 #cc6666
 
 # set $mod to super
 set $mod Mod4
@@ -147,9 +156,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 mode "[s]uspend [p]oweroff [h]ibernate" {
-     bindsym s exec systemctl suspend
-     bindsym p exec systemctl poweroff
-     bindsym h exec systemctl hibernate
+     bindsym s mode "default"; exec systemctl suspend
+     bindsym p mode "default"; exec systemctl poweroff
+     bindsym h mode "default"; exec systemctl hibernate
      bindsym Return mode "default"
      bindsym Escape mode "default"
      bindsym $mod+r mode "default"
@@ -161,6 +170,17 @@ bindsym $mod+p mode "[s]uspend [p]oweroff [h]ibernate"
 # finds out, if available)
 bar {
     status_command i3status
+    colors {
+        background $black
+        statusline $white
+        separator $white
+
+        focused_workspace  $white $white $black
+        active_workspace   $black $black $white
+        inactive_workspace $black $black $white
+        urgent_workspace   $black $black $white
+        binding_mode       $red $red $white
+    }
 }
 
 #
@@ -170,10 +190,10 @@ bar {
 # default_border normal 2
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #3c3836 #3c3836 #ebdbb2 #504945   #3c3836
-client.focused_inactive #1d2021 #1d2021 #d5c4a1 #1d2021   #1d2021
-client.unfocused        #1d2021 #1d2021 #d5c4a1 #1d2021   #1d2021
-client.urgent           #3c3836 #cc241d #ebdbb2 #504945   #3c3836
-client.placeholder      #1d2021 #1d2021 #d5c4a1 #1d2021   #1d2021
+client.focused          $white  $white  $black  $white    $white
+client.focused_inactive $black  $black  $white  $black    $black
+client.unfocused        $black  $black  $white  $black    $black
+client.urgent           $black  $black  $white  $black    $black
+client.placeholder      $black  $black  $white  $black    $black
 
 client.background       #ffffff
