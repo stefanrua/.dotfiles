@@ -2,10 +2,7 @@
 ! URxvt.font:xft:Terminus:size=12
 Rxvt.font:xft:Roboto Mono:size=12
 ! Rxvt.font:xft:Inconsolata:size=14
-! URxvt.letterSpace: -4
 URxvt.scrollBar: false
-! URxvt.cursorColor: #FFFFFF
-! URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.internalBorder: 16
 URxvt.geometry: 50x25
@@ -14,7 +11,7 @@ URxvt.geometry: 50x25
 Xft.antialias: true
 Xft.hinting:   true
 Xft.rgba:      rgb
-Xft.hintstyle: hintfull
+Xft.hintstyle: hintslight
 Xft.dpi:       120
 
 !!! lovelace
@@ -62,43 +59,22 @@ Xft.dpi:       120
 !*color15: #ebdbb2
 
 !!! tomorrow
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
-*.color0:       #1d1f21
-*.color8:       #969896
-*.color1:       #cc6666
-*.color9:       #cc6666
-*.color2:       #b5bd68
-*.color10:      #b5bd68
-*.color3:       #f0c674
-*.color11:      #f0c674
-*.color4:       #81a2be
-*.color12:      #81a2be
-*.color5:       #b294bb
-*.color13:      #b294bb
-*.color6:       #8abeb7
-*.color14:      #8abeb7
-*.color7:       #c5c8c6
-*.color15:      #ffffff
-
-!!! isotope
-!*.foreground:   #ffffff
-!*.background:   #000000
-!*.cursorColor:  #ffffff
-!*.color0:       #000000
-!*.color8:       #808080
-!*.color1:       #ff0000
-!*.color9:       #ff0000
-!*.color2:       #33ff00
-!*.color10:      #33ff00
-!*.color3:       #ff0099
-!*.color11:      #ff0099
-!*.color4:       #0066ff
-!*.color12:      #0066ff
-!*.color5:       #cc00ff
-!*.color13:      #cc00ff
-!*.color6:       #00ffff
-!*.color14:      #00ffff
-!*.color7:       #d0d0d0
-!*.color15:      #ffffff
+*foreground:   #c5c8c6
+*background:   #1d1f21
+*cursorColor:  #c5c8c6
+*color0:       #1d1f21
+*color8:       #969896
+*color1:       #cc6666
+*color9:       #cc6666
+*color2:       #b5bd68
+*color10:      #b5bd68
+*color3:       #f0c674
+*color11:      #f0c674
+*color4:       #81a2be
+*color12:      #81a2be
+*color5:       #b294bb
+*color13:      #b294bb
+*color6:       #8abeb7
+*color14:      #8abeb7
+*color7:       #c5c8c6
+*color15:      #ffffff
