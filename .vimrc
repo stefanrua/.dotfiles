@@ -1,17 +1,11 @@
 set nocompatible            " get rid of Vi compatibility
-set clipboard=unnamed       " use X11's primary selection
+" set clipboard=unnamed       " use X11's primary selection
 
 " Move vertically by visual (instead of logical) lines
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-
-"split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
 " space open/closes folds
 nnoremap <space> za
@@ -26,19 +20,18 @@ set shiftwidth=4            " number of spaces when shifting
 set shiftround              " Always indent/outdent to the nearest tabstop
 set smartindent             " indent intelligently (maybe)
 
-set number                  " show line numbers
+" set number                  " show line numbers
 set showcmd                 " show command in bottom bar
 set ruler                   " always show ruler
 set nowrap                  " don't wrap long lines
 " set cursorline	        " highlight current line
 set wildmenu                " visual autocomplete for command menu
-set lazyredraw              " redraw only when we need to.
-set scrolloff=8             " scroll when the cursor gets close to the edge
+" set lazyredraw              " redraw only when we need to.
+" set scrolloff=8             " scroll when the cursor gets close to the edge
 
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
 set ignorecase		        " make searches case-insensitive.
-set nohlsearch		        " don't continue to highlight searched phrases.
 
 set foldenable              " enable folding
 set foldlevelstart=10       " open most folds by default
@@ -48,7 +41,8 @@ set foldmethod=indent       " fold based on indent level
 set t_Co=16                 " Use base 16 colors (from .Xresources)
 " colorscheme default
 
-call plug#begin('./vim/plugged')
-Plug 'scrooloose/nerdtree'
-call plug#end()
-
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 20
