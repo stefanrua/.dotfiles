@@ -1,3 +1,10 @@
+" install plugin manager
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " plugins
 call plug#begin()
 Plug 'pangloss/vim-javascript'
@@ -5,9 +12,12 @@ Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 call plug#end()
 
+" plugin options
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
+
+
 
 set nocompatible            " get rid of Vi compatibility
 " set clipboard=unnamed       " use X11's primary selection
