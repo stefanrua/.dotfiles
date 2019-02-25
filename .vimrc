@@ -1,3 +1,14 @@
+" plugins
+call plug#begin()
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
+call plug#end()
+
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+
 set nocompatible            " get rid of Vi compatibility
 " set clipboard=unnamed       " use X11's primary selection
 
@@ -12,13 +23,14 @@ nnoremap <space> za
 
 syntax enable               " enable syntax higlighting
 
-" set noexpandtab             " use tabs, not spaces
-set expandtab				" use spaces, not tabs
-set tabstop=4               " number of visual spaces per TAB
+set expandtab				        " use spaces, not tabs
 set softtabstop=4           " number of spaces in tab when editing
+" set noexpandtab             " use tabs, not spaces
+set tabstop=4               " number of visual spaces per TAB
 set shiftwidth=4            " number of spaces when shifting
 set shiftround              " Always indent/outdent to the nearest tabstop
-set smartindent             " indent intelligently (maybe)
+set smartindent             " indent intelligently
+" filetype plugin indent on   " indent according to filetype
 
 " set number                  " show line numbers
 set showcmd                 " show command in bottom bar
@@ -27,7 +39,6 @@ set nowrap                  " don't wrap long lines
 " set cursorline	        " highlight current line
 set wildmenu                " visual autocomplete for command menu
 " set lazyredraw              " redraw only when we need to.
-" set scrolloff=8             " scroll when the cursor gets close to the edge
 
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
