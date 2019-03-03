@@ -3,8 +3,9 @@
 Rxvt.font:xft:Roboto Mono:size=12
 ! Rxvt.font:xft:Inconsolata:size=14
 URxvt.scrollBar: false
+URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
-URxvt.internalBorder: 16
+! URxvt.internalBorder: 16
 URxvt.geometry: 50x25
 
 ! Fonts
@@ -58,23 +59,59 @@ Xft.dpi:       120
 !*color7:  #a89984
 !*color15: #ebdbb2
 
-!!! tomorrow
-*foreground:   #c5c8c6
-*background:   #1d1f21
-*cursorColor:  #c5c8c6
-*color0:       #1d1f21
-*color8:       #969896
-*color1:       #cc6666
-*color9:       #cc6666
-*color2:       #b5bd68
-*color10:      #b5bd68
-*color3:       #f0c674
-*color11:      #f0c674
-*color4:       #81a2be
-*color12:      #81a2be
-*color5:       #b294bb
-*color13:      #b294bb
-*color6:       #8abeb7
-*color14:      #8abeb7
-*color7:       #c5c8c6
-*color15:      #ffffff
+!*foreground:   #373b41
+!*background:   #ffffff
+!*cursorColor:  #373b41
+!*color0:       #1d1f21
+!*color8:       #969896
+!*color1:       #cc342b
+!*color9:       #cc342b
+!*color2:       #198844
+!*color10:      #198844
+!*color3:       #fba922
+!*color11:      #fba922
+!*color4:       #3971ed
+!*color12:      #3971ed
+!*color5:       #a36ac7
+!*color13:      #a36ac7
+!*color6:       #3971ed
+!*color14:      #3971ed
+!*color7:       #c5c8c6
+!*color15:      #ffffff
+
+! special
+*foreground:   #515151
+*background:   #f2f0ec
+*cursorColor:  #515151
+
+!black
+*color0:       #2d2d2d
+*color8:       #747369
+
+!red
+*color1:       #f2777a
+*color9:       #f2777a
+
+!green
+*color2:       #99cc99
+*color10:      #99cc99
+
+!yellow
+*color3:       #ffcc66
+*color11:      #ffcc66
+
+!blue
+*color4:       #6699cc
+*color12:      #6699cc
+
+!magenta
+*color5:       #cc99cc
+*color13:      #cc99cc
+
+!cyan
+*color6:       #66cccc
+*color14:      #66cccc
+
+!white
+*color7:       #d3d0c8
+*color15:      #f2f0ec
