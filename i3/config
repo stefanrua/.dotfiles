@@ -7,8 +7,9 @@ set $font Roboto
 set $size 11
 
 # colors
-set_from_resource $fg i3wm.color7 #ffffff
-set_from_resource $bg i3wm.color0 #000000
+set_from_resource $fg i3wm.foreground #ffffff
+set_from_resource $bg i3wm.background #000000
+set_from_resource $gray i3wm.color7 #000000
 set_from_resource $red i3wm.color1 #ff0000
 set_from_resource $acc i3wm.color1 #ff8800
 
@@ -17,6 +18,7 @@ set $mod Mod4
 
 # terminal
 set $term urxvt
+# st -f "Roboto Mono-12"
 
 # workspace names
 set $ws1 "1"
@@ -54,10 +56,10 @@ font pango: $font $size
 # window border colors
 # the order is: border background text indicator child_border
 client.focused          $acc $acc $bg  $acc $acc
-client.focused_inactive $fg  $fg  $bg  $fg  $fg
-client.unfocused        $fg  $fg  $bg  $fg  $fg
+client.focused_inactive $gray  $gray  $bg  $gray  $gray
+client.unfocused        $gray  $gray  $bg  $gray  $gray
 client.urgent           $red $red $bg  $red $red
-client.placeholder      $fg  $fg  $bg  $fg  $fg
+client.placeholder      $gray  $gray  $bg  $gray  $gray
 client.background       $bg
 
 # window borders
