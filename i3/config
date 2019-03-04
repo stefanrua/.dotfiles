@@ -194,7 +194,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # power menu mode
-bindsym $mod+p mode "[s]uspend [h]ibernate [p]oweroff"
+bindsym $mod+p mode "[s]uspend [h]ibernate [r]eboot [p]oweroff"
 # resize mode
 # (you can also resize windows using your mouse by holding
 # down $mod and dragging with the right mouse button)
@@ -218,10 +218,11 @@ mode "resize" {
 }
 
 # power menu mode
-mode "[s]uspend [h]ibernate [p]oweroff" {
+mode "[s]uspend [h]ibernate [r]eboot [p]oweroff" {
      bindsym s mode "default"; exec systemctl suspend
-     bindsym p mode "default"; exec systemctl poweroff
      bindsym h mode "default"; exec systemctl hibernate
+     bindsym r mode "default"; exec systemctl reboot
+     bindsym p mode "default"; exec systemctl poweroff
      bindsym Return mode "default"
      bindsym Escape mode "default"
      bindsym $mod+r mode "default"
