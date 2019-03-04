@@ -15,40 +15,46 @@ Xft.rgba:      rgb
 Xft.hintstyle: hintslight
 ! Xft.dpi:       120
 
-!!! Colorscheme: gjm
-!special
-*foreground:   #c5c5c5
-*background:   #1c1c1c
-*cursorColor:  #c5c5c5
+! Tomorrow by Chris Kempson
+! special (light)
+!*foreground:   #373b41
+!*background:   #ffffff
+!*cursorColor:  #373b41
 
-!black
-*color0:       #1c1c1c
-*color8:       #666666
+! special (dark)
+*foreground:   #c5c8c6
+*background:   #1d1f21
+*cursorColor:  #c5c8c6
 
-!red
-*color1:       #ff005b
-*color9:       #ff00a0
+! black
+*color0:       #1d1f21
+*color8:       #969896
 
-!green
-*color2:       #cee318
-*color10:      #ccff00
+! red
+*color1:       #cc6666
+*color9:       #cc6666
 
-!yellow
-*color3:       #ffe755
-*color11:      #ff9f00
+! green
+*color2:       #b5bd68
+*color10:      #b5bd68
 
-!blue
-*color4:       #048ac7
-*color12:      #48c6ff
+! yellow
+*color3:       #f0c674
+*color11:      #f0c674
 
-!magenta
-*color5:       #833c9f
-*color13:      #be67e1
+! blue
+*color4:       #81a2be
+*color12:      #81a2be
 
-!cyan
-*color6:       #0ac1cd
-*color14:      #63e7f0
+! magenta
+*color5:       #b294bb
+*color13:      #b294bb
 
-!white
-*color7:       #e5e5e5
-*color15:      #f3f3f3
+! cyan
+*color6:       #8abeb7
+*color14:      #8abeb7
+
+! white
+*color7:       #c5c8c6
+*color15:      #ffffff
+
