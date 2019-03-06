@@ -7,8 +7,8 @@ endif
 
 " plugins
 call plug#begin()
-" Plug 'pangloss/vim-javascript'
-" Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'junegunn/goyo.vim'
 call plug#end()

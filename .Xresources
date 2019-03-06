@@ -1,30 +1,30 @@
-! URxvt.font:xft:Monospace:size=12
-! URxvt.font:xft:Terminus:size=12
+! "Terminus" or "Monospace" are usually installed already
 Rxvt.font:xft:Roboto Mono:size=12
-! Rxvt.font:xft:Inconsolata:size=14
 URxvt.scrollBar: false
-!URxvt.letterSpace: -1
+! URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
 URxvt.internalBorder: 16
 URxvt.geometry: 50x25
+
+Xcursor.size: 16
 
 ! Fonts
 Xft.antialias: true
 Xft.hinting:   true
 Xft.rgba:      rgb
 Xft.hintstyle: hintslight
-! Xft.dpi:       120
+Xft.dpi:       120
 
-! Tomorrow by Chris Kempson
+! Colorscheme: Tomorrow by Chris Kempson
 ! special (light)
-!*foreground:   #373b41
-!*background:   #ffffff
-!*cursorColor:  #373b41
+*foreground:   #373b41
+*background:   #ffffff
+*cursorColor:  #373b41
 
 ! special (dark)
-*foreground:   #c5c8c6
-*background:   #1d1f21
-*cursorColor:  #c5c8c6
+!*foreground:   #c5c8c6
+!*background:   #1d1f21
+!*cursorColor:  #c5c8c6
 
 ! black
 *color0:       #1d1f21

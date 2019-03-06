@@ -1,17 +1,18 @@
-#
-# Variables
-#
+### Variables ###
 
 # font
-set $font Roboto
-set $size 11
+# "Terminus" or "Monospace" are usually installed already
+set $font Bitstream Charter
+set $size 12
 
 # colors
 set_from_resource $fg i3wm.foreground #ffffff
 set_from_resource $bg i3wm.background #000000
-set_from_resource $gray i3wm.color8 #000000
+set_from_resource $black i3wm.color0 #000000
+set_from_resource $gray i3wm.color8 #888888
+set_from_resource $white i3wm.color7 #ffffff
 set_from_resource $red i3wm.color1 #ff0000
-set_from_resource $acc i3wm.color11 #ff8800
+set_from_resource $acc i3wm.color5 #ff8800
 
 # modifier key
 set $mod Mod4
@@ -33,63 +34,54 @@ set $ws9 "9"
 set $ws10 "10"
 
 
-
-#
-# Autostart
-#
+### Autostart ###
 
 # notification daemon
 exec_always dunst -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
+exec_always compton -c -o 0.1
 # exec nm-applet # network applet
 # exec wal -R # use last applied pywal theme and wallpaper
-exec feh --bg-fill ~/Pictures/takeuchi-polar-bear-wallpaper.png
+exec feh --bg-fill ~/Pictures/backgrounds/oriental-street-dithered.jpg
 
 
-
-#
-# Bar/window borders
-#
+### Bar/window borders ###
 
 # font for window titles and the bar
 font pango: $font $size
 
 # window border colors
-# the order is: border background text indicator child_border
-client.focused          $fg $fg $bg  $fg $fg
-client.focused_inactive $gray  $gray  $bg  $gray  $gray
-client.unfocused        $gray  $gray  $bg  $gray  $gray
-client.urgent           $red $red $bg  $red $red
-client.placeholder      $gray  $gray  $bg  $gray  $gray
+# the order is:         border background text  indicator child_border
+client.focused          $fg    $fg        $bg   $bg       $bg
+client.focused_inactive $fg    $fg        $gray $bg       $bg
+client.unfocused        $fg    $fg        $gray $bg       $bg
+client.urgent           $red   $red       $fg   $red      $red
+client.placeholder      $fg    $fg        $gray $bg       $bg
 client.background       $bg
 
-# window borders
-# hide window borders when only one window is open
+# hide borders when full screen
 hide_edge_borders smart
-# window borders
-default_border pixel 2
+# print all window titles bold
+for_window [class=".*"] title_format "<b>%title</b>"
 
 # bar colors
 bar {
     status_command i3status
     separator_symbol "   "
     colors {
-        background $bg
-        statusline $fg
-        separator $fg
+        background $black
+        statusline $white
+        separator $white
 
-        focused_workspace  $fg $fg $bg
-        active_workspace   $bg $bg $fg
-        inactive_workspace $bg $bg $fg
-        urgent_workspace   $acc $acc $bg
-        binding_mode       $acc $acc $bg
+        focused_workspace  $black $black $white
+        active_workspace   $black $black $gray
+        inactive_workspace $black $black $gray
+        urgent_workspace   $red $red $black
+        binding_mode       $acc $acc $black
     }
 }
 
 
-
-#
-# Keybindings
-#
+### Keybindings ###
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -122,7 +114,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exit
 
 # modifier key to press for dragging containers around
 floating_modifier $mod
@@ -167,12 +159,6 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
 # toggle split direction
 bindsym $mod+v split toggle
 
@@ -202,15 +188,10 @@ bindsym $mod+r mode "resize"
 
 # resize mode
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
-
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 100 px or 10 ppt
+        bindsym j resize grow height 100 px or 10 ppt
+        bindsym k resize shrink height 100 px or 10 ppt
+        bindsym l resize grow width 100 px or 10 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
