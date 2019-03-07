@@ -1,3 +1,5 @@
+set nocompatible            " get rid of Vi compatibility
+
 " install plugin manager
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -10,7 +12,8 @@ call plug#begin()
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
-Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/goyo.vim'
+Plug 'kien/ctrlp.vim'
 call plug#end()
 
 " plugin options
@@ -18,9 +21,7 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
 
-
-
-set nocompatible            " get rid of Vi compatibility
+set path=.,,**
 syntax enable               " enable syntax higlighting
 filetype plugin on          " enable plugins
 au FileType gitcommit set tw=72
@@ -67,7 +68,3 @@ set t_Co=16                 " Use base 16 colors (from .Xresources)
 highlight TabLine cterm=None " no underline for tabline
 
 let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 20
