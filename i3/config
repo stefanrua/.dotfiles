@@ -19,7 +19,6 @@ set $mod Mod4
 
 # terminal
 set $term urxvt
-# st -f "Roboto Mono-12"
 
 # workspace names
 set $ws1 "1"
@@ -41,7 +40,7 @@ exec_always dunst -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf
 exec_always compton -c -o 0.1
 # exec nm-applet # network applet
 # exec wal -R # use last applied pywal theme and wallpaper
-exec feh --bg-fill ~/Pictures/backgrounds/oriental-street-dithered.jpg
+exec feh --bg-fill Downloads/stephen-andrews-1412905-unsplash.jpg
 
 
 ### Bar/window borders ###

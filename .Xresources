@@ -1,5 +1,5 @@
 ! "Terminus" or "Monospace" are usually installed already
-Rxvt.font:xft:Roboto Mono:size=12
+URxvt.font:xft:Roboto Mono:size 12
 URxvt.scrollBar: false
 ! URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
@@ -7,13 +7,7 @@ URxvt.internalBorder: 16
 URxvt.geometry: 50x25
 
 Xcursor.size: 16
-
-! Fonts
-Xft.antialias: true
-Xft.hinting:   true
-Xft.rgba:      rgb
-Xft.hintstyle: hintslight
-Xft.dpi:       120
+! Xft.dpi:       120
 
 ! Colorscheme: Tomorrow by Chris Kempson
 ! special (light)

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-programs="i3 i3status dunst"
+programs="i3 i3status"
 
 ln -s $PWD/.Xresources $HOME/
 ln -s $PWD/.vimrc $HOME/
