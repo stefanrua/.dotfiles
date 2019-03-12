@@ -169,7 +169,7 @@ export PS1="\[\e[33m\]\w\[\e[m\]\`parse_git_branch\` \\$ "
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export NNN_USE_EDITOR=1
-PATH=~/bin:$PATH
+export PATH="$HOME/bin:$PATH"
 
 editor=vim
 
