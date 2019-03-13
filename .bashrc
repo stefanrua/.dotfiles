@@ -165,7 +165,7 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[33m\]\w\[\e[m\]\`parse_git_branch\` \\$ "
+export PS1="\[\e[33m\]\W\[\e[m\]\`parse_git_branch\` \\$ "
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export NNN_USE_EDITOR=1
