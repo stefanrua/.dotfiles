@@ -116,7 +116,8 @@ fi
 # my stuff
 # 
 
-export PS1=" \W \\$\[$(tput sgr0)\]"
+export PS1="\W \\$ \[$(tput sgr0)\]"
+
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export NNN_USE_EDITOR=1
