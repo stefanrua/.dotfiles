@@ -4,7 +4,7 @@ URxvt.scrollBar: false
 URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
 URxvt.internalBorder: 16
-URxvt.geometry: 50x25
+URxvt.geometry: 80x35
 
 Xcursor.size: 16
 Xft.dpi:       120
