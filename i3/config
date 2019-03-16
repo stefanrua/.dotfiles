@@ -51,7 +51,7 @@ font pango: $font $size
 
 # window border colors
 # the order is:         border background text  indicator child_border
-client.focused          $fg    $fg        $bg   $bg       $bg
+client.focused          $fg    $fg        $bg   $bg       $fg
 client.focused_inactive $fg    $fg        $gray $bg       $bg
 client.unfocused        $fg    $fg        $gray $bg       $bg
 client.urgent           $red   $red       $fg   $red      $red
@@ -60,6 +60,7 @@ client.background       $bg
 
 # hide borders when full screen
 hide_edge_borders smart
+default_border pixel 1
 # print all window titles bold
 for_window [class=".*"] title_format "<b>%title</b>"
 
