@@ -1,9 +1,9 @@
 ### Variables ###
 
 # font
-# "Terminus" or "Monospace" are usually installed already
-set $font Bitstream Charter
-set $size 12
+# "Monospace" is usually installed already
+set $font Monospace
+set $size 10
 
 # colors
 set_from_resource $fg i3wm.foreground #ffffff
@@ -22,9 +22,9 @@ set $term urxvt
 set $altterm xfce4-terminal
 
 # workspace names
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
+set $ws1 "1: term"
+set $ws2 "2: web"
+set $ws3 "3: dev"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -38,10 +38,11 @@ set $ws10 "10"
 
 # notification daemon
 exec_always dunst -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
-exec_always compton -c -o 0.1
+# exec_always compton -c -o 0.1
 # exec nm-applet # network applet
 # exec wal -R # use last applied pywal theme and wallpaper
-exec feh --bg-fill /home/stefan/Pictures/backgrounds/oriental-street-dithered.jpg
+# exec feh --bg-fill /home/stefan/Pictures/backgrounds/oriental-street-dithered.jpg
+exec xsetroot -solid darkgray
 
 
 ### Bar/window borders ###
@@ -51,7 +52,7 @@ font pango: $font $size
 
 # window border colors
 # the order is:         border background text  indicator child_border
-client.focused          $fg    $fg        $bg   $bg       $fg
+client.focused          $fg    $fg        $bg   $fg       $fg
 client.focused_inactive $fg    $fg        $gray $bg       $bg
 client.unfocused        $fg    $fg        $gray $bg       $bg
 client.urgent           $red   $red       $fg   $red      $red
@@ -69,15 +70,15 @@ bar {
     status_command i3status
     separator_symbol "   "
     colors {
-        background $black
-        statusline $white
-        separator $white
+        background $bg
+        statusline $fg
+        separator $fg
 
-        focused_workspace  $black $black $white
-        active_workspace   $black $black $gray
-        inactive_workspace $black $black $gray
-        urgent_workspace   $red $red $black
-        binding_mode       $acc $acc $black
+        focused_workspace  $acc $acc $bg
+        active_workspace   $bg $bg $fg
+        inactive_workspace $bg $bg $fg
+        urgent_workspace   $red $red $white
+        binding_mode       $acc $acc $white
     }
 }
 
