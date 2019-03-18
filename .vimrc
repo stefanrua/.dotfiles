@@ -50,7 +50,6 @@ set wildmenu                " visual autocomplete for command menu
 set lazyredraw              " redraw only when we need to.
 
 syntax enable               " enable syntax higlighting
-filetype plugin on          " enable plugins
-filetype plugin indent on   " indent according to filetype
+filetype plugin indent on   " enable plugins and indenting according to filetype
 au FileType gitcommit set tw=72 " wrap at 72 chars for git commits
 highlight TabLine cterm=None " no underline for tabline
