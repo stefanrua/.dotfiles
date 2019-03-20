@@ -1,6 +1,6 @@
 #! /bin/bash
 
-dotfiles=".Xresources .vimrc .bashrc"
+dotfiles=".Xresources .vimrc .bashrc .tmux.conf"
 programs="i3 i3status"
 
 for i in $dotfiles; do
