@@ -13,7 +13,7 @@ cd .dotfiles
 ./install.sh
 ```
 
-## Window manager kebinds
+## Window manager keybinds
 
 Here are the essential keybinds for navigating in `i3` (your window
 manager). From now on what you may have in a previous life called "the
@@ -53,7 +53,7 @@ These are only the beginning! You can find the rest in
 
 Font size will be affected by `Xft.dpi:` in `.Xresources`, which you
 might want to turn off on normal DPI monitors. All used fonts are in the
-config files `.Xresources` and `i3/config`. You might want to swithc to
+config files `.Xresources` and `i3/config`. You might want to switch to
 the font called "Monospace" which is pre-installed on most systems in
 case you don't have my currently used fonts installed.
 
