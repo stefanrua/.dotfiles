@@ -1,5 +1,14 @@
 # Pls halp!
 
+## Installation
+
+```
+cd $HOME
+git clone https://github.com/strutsy/.dotfiles.git
+cd .dotfiles
+./install.sh
+```
+
 ## Window manager kebinds
 
 Here are the essential keybinds for navigating in `i3` (your window
