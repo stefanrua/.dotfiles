@@ -41,6 +41,7 @@ set $ws10 "10"
 # exec nm-applet # network applet
 # exec feh --bg-fill /home/stefan/Pictures/backgrounds/oriental-street-dithered.jpg
 exec xsetroot -solid darkgray
+exec evince $HOME/.dotfiles/README.pdf
 
 # notification daemon
 exec dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
