@@ -31,9 +31,9 @@ vnoremap k gk
 
 " Tabbing
 set expandtab				" use spaces, not tabs
-set softtabstop=4           " number of spaces in tab when editing
-set tabstop=4               " number of visual spaces per TAB
-set shiftwidth=4            " number of spaces when shifting
+set softtabstop=2           " number of spaces in tab when editing
+set tabstop=2               " number of visual spaces per TAB
+set shiftwidth=2            " number of spaces when shifting
 set shiftround              " Always indent/outdent to the nearest tabstop
 set smartindent             " indent intelligently
 

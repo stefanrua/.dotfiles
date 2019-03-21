@@ -19,7 +19,7 @@ set $mod Mod4
 
 # terminal
 set $term urxvt
-set $altterm xfce4-terminal
+set $altterm stterm -f "Monospace-12"
 
 # workspace names
 set $ws1 "1: term"
@@ -36,11 +36,11 @@ set $ws10 "10"
 
 ### Autostart ###
 
-exec wal -R # use last applied pywal theme and wallpaper
+# exec wal -R # use last applied pywal theme and wallpaper
 # exec_always compton -c -o 0.1
 # exec nm-applet # network applet
 # exec feh --bg-fill /home/stefan/Pictures/backgrounds/oriental-street-dithered.jpg
-# exec xsetroot -solid darkgray
+exec xsetroot -solid darkgray
 
 # notification daemon
 exec dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16

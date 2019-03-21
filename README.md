@@ -60,6 +60,7 @@ man page stream of conciousness garbage? Google it.
 - `vim` (text editor)
 - `i3` (window manager)
 - `urxvt` (terminal)
+- `libnotify` (sends notifications to notification daemon)
 - `dunst` (notification daemon)
 - `dmenu` (launcher)
 - `bc` (calculator | TUI)

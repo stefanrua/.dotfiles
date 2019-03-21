@@ -1,9 +1,9 @@
 ! "Monospace" is usually installed already
-URxvt.font:xft:Monospace:size=12
+URxvt.font:xft:Monospace:size=11
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
-URxvt.internalBorder: 16
+!URxvt.internalBorder: 16
 URxvt.geometry: 80x35
 
 Xcursor.size: 16
