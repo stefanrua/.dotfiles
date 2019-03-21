@@ -2,6 +2,10 @@
 
 ## Installation
 
+Start by installing `i3 suckless-tools rxvt-unicode` (the bare minimum) with whatever package manager you have (`apt dnf pacman` etc...).
+
+Then clone my configs and run the installer!
+
 ```
 cd $HOME
 git clone https://github.com/strutsy/.dotfiles.git
