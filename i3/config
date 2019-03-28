@@ -19,7 +19,7 @@ set $mod Mod4
 
 # terminal
 set $term urxvt
-set $altterm stterm -f "Monospace-12"
+set $altterm stterm -f "Monospace-11"
 
 # workspace names
 set $ws1 "1: term"
@@ -36,11 +36,7 @@ set $ws10 "10"
 
 ### Autostart ###
 
-# exec wal -R # use last applied pywal theme and wallpaper
-# exec_always compton -c -o 0.1
-# exec nm-applet # network applet
-# exec feh --bg-fill /home/stefan/Pictures/backgrounds/oriental-street-dithered.jpg
-exec xsetroot -solid darkgray
+exec $HOME/.autoexec.sh
 exec evince $HOME/.dotfiles/README.pdf
 
 # notification daemon
