@@ -12,7 +12,7 @@ set_from_resource $black i3wm.color0 #000000
 set_from_resource $gray i3wm.color8 #888888
 set_from_resource $white i3wm.color7 #ffffff
 set_from_resource $red i3wm.color1 #ff0000
-set_from_resource $acc i3wm.color5 #ff8800
+set_from_resource $acc i3wm.color3 #ff8800
 
 # modifier key
 set $mod Mod4
@@ -22,16 +22,16 @@ set $term urxvt
 set $altterm stterm -f "Monospace-11"
 
 # workspace names
-set $ws1 "1: term"
-set $ws2 "2: web"
-set $ws3 "3: dev"
-set $ws4 "4: comm"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1:I"
+set $ws2 "2:II"
+set $ws3 "3:III"
+set $ws4 "4:IV"
+set $ws5 "5:V"
+set $ws6 "6:VI"
+set $ws7 "7:VII"
+set $ws8 "8:VIII"
+set $ws9 "9:IX"
+set $ws10 "10:X"
 
 
 ### Autostart ###
@@ -67,6 +67,7 @@ for_window [class=".*"] title_format "<b>%title</b>"
 bar {
     status_command i3status
     separator_symbol "   "
+    strip_workspace_numbers yes
     colors {
         background $bg
         statusline $fg

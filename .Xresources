@@ -9,22 +9,64 @@ URxvt.geometry: 80x35
 Xcursor.size: 16
 Xft.dpi:       120
 
-! Dracula Xresources palette
-*foreground: #F8F8F2
-*background: #282A36
-*color0:     #000000
-*color8:     #4D4D4D
-*color1:     #FF5555
-*color9:     #FF6E67
-*color2:     #50FA7B
-*color10:    #5AF78E
-*color3:     #F1FA8C
-*color11:    #F4F99D
-*color4:     #BD93F9
-*color12:    #CAA9FA
-*color5:     #FF79C6
-*color13:    #FF92D0
-*color6:     #8BE9FD
-*color14:    #9AEDFE
-*color7:     #BFBFBF
-*color15:    #E6E6E6
+! Tomorrow Dark
+*foreground:   #c5c8c6
+*background:   #1d1f21
+*cursorColor:  #c5c8c6
+*color0:       #1d1f21
+*color8:       #969896
+*color1:       #cc6666
+*color9:       #cc6666
+*color2:       #b5bd68
+*color10:      #b5bd68
+*color3:       #f0c674
+*color11:      #f0c674
+*color4:       #81a2be
+*color12:      #81a2be
+*color5:       #b294bb
+*color13:      #b294bb
+*color6:       #8abeb7
+*color14:      #8abeb7
+*color7:       #c5c8c6
+*color15:      #ffffff
+
+! ! Dracula Xresources palette
+! *foreground: #F8F8F2
+! *background: #282A36
+! *color0:     #000000
+! *color8:     #4D4D4D
+! *color1:     #FF5555
+! *color9:     #FF6E67
+! *color2:     #50FA7B
+! *color10:    #5AF78E
+! *color3:     #F1FA8C
+! *color11:    #F4F99D
+! *color4:     #BD93F9
+! *color12:    #CAA9FA
+! *color5:     #FF79C6
+! *color13:    #FF92D0
+! *color6:     #8BE9FD
+! *color14:    #9AEDFE
+! *color7:     #BFBFBF
+! *color15:    #E6E6E6
+
+! ! Solarized Light
+! *foreground:   #586e75
+! *background:   #fdf6e3
+! *cursorColor:  #586e75
+! *color0:       #002b36
+! *color8:       #657b83
+! *color1:       #dc322f
+! *color9:       #dc322f
+! *color2:       #859900
+! *color10:      #859900
+! *color3:       #b58900
+! *color11:      #b58900
+! *color4:       #268bd2
+! *color12:      #268bd2
+! *color5:       #6c71c4
+! *color13:      #6c71c4
+! *color6:       #2aa198
+! *color14:      #2aa198
+! *color7:       #93a1a1
+! *color15:      #fdf6e3
