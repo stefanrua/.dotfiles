@@ -116,7 +116,7 @@ fi
 # my stuff
 # 
 
-export PS1="\W \\$ \[$(tput sgr0)\]"
+export PS1="\[\e[30;47m\]\A\[\e[m\] \w \\$ "
 
 
 export ANDROID_HOME=$HOME/Android/Sdk
