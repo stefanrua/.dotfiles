@@ -12,7 +12,7 @@ call plug#begin()
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
-" Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 call plug#end()
@@ -43,6 +43,7 @@ set ignorecase		        " make searches case-insensitive.
 
 " Misc
 set t_Co=16                 " Use base 16 colors (from .Xresources)
+" hi Visual term=reverse cterm=reverse
 set showcmd                 " show command in bottom bar
 set ruler                   " always show ruler
 set nowrap                  " don't wrap long lines

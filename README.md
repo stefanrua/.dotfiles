@@ -76,6 +76,7 @@ man page stream of conciousness garbage? Google it.
 - `libnotify` (sends notifications to notification daemon)
 - `dunst` (notification daemon)
 - `dmenu` (launcher)
+- `volumeicon-alsa` (creates a small volume icon and enables shortcut control)
 - `bc` (calculator | TUI)
 - `make` (make things :\^))
 - `network-manager` (network manager (duh) - you can use `nm-applet` to select networks with a GUI from a bar applet)

@@ -1,34 +1,34 @@
 ! "Monospace" is usually installed already
-URxvt.font:xft:Monospace:size=11
+URxvt.font:xft:Terminus:size=8
 URxvt.scrollBar: false
-URxvt.letterSpace: -1
+!URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
-!URxvt.internalBorder: 16
+! URxvt.internalBorder: 16
 URxvt.geometry: 80x35
 
 Xcursor.size: 16
-Xft.dpi:       120
+!Xft.dpi:       120
 
-! Tomorrow Dark
-*foreground:   #c5c8c6
-*background:   #1d1f21
-*cursorColor:  #c5c8c6
-*color0:       #1d1f21
-*color8:       #969896
-*color1:       #cc6666
-*color9:       #cc6666
-*color2:       #b5bd68
-*color10:      #b5bd68
-*color3:       #f0c674
-*color11:      #f0c674
-*color4:       #81a2be
-*color12:      #81a2be
-*color5:       #b294bb
-*color13:      #b294bb
-*color6:       #8abeb7
-*color14:      #8abeb7
-*color7:       #c5c8c6
-*color15:      #ffffff
+! ! Tomorrow Dark
+! *foreground:   #c5c8c6
+! *background:   #1d1f21
+! *cursorColor:  #c5c8c6
+! *color0:       #1d1f21
+! *color8:       #969896
+! *color1:       #cc6666
+! *color9:       #cc6666
+! *color2:       #b5bd68
+! *color10:      #b5bd68
+! *color3:       #f0c674
+! *color11:      #f0c674
+! *color4:       #81a2be
+! *color12:      #81a2be
+! *color5:       #b294bb
+! *color13:      #b294bb
+! *color6:       #8abeb7
+! *color14:      #8abeb7
+! *color7:       #c5c8c6
+! *color15:      #ffffff
 
 ! ! Dracula Xresources palette
 ! *foreground: #F8F8F2
@@ -70,3 +70,23 @@ Xft.dpi:       120
 ! *color14:      #2aa198
 ! *color7:       #93a1a1
 ! *color15:      #fdf6e3
+
+! Pure
+*foreground: #d6e5fb
+*background: #12151a
+*color0:     #161720
+*color8:     #12151a
+*color1:     #f0185a
+*color9:     #ff4551
+*color2:     #12e689
+*color10:    #3aff93
+*color3:     #ffa463
+*color11:    #ffdd74
+*color4:     #02a4fc
+*color12:    #34b0fd
+*color5:     #c00eef
+*color13:    #ef5aea
+*color6:     #26c5ff
+*color14:    #26c5ff
+*color7:     #aab5c6
+*color15:    #d6e5fb

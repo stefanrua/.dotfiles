@@ -24,7 +24,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (autotetris-mode markdown-mode kaolin-themes cherry-blossom-theme)))
+    (exwm autotetris-mode markdown-mode kaolin-themes cherry-blossom-theme)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(sml/active-background-color "#34495e")
