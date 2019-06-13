@@ -2,8 +2,8 @@
 
 # Use the -a flag if you want all the configs I use
 
-dotfiles=(".Xresources")
-programs=("i3" "i3status")
+dotfiles=("")
+programs=("xfce4")
 
 if [ "$1" = "-a" ]; then
     dotfiles+=(".vimrc" ".bashrc" ".tmux.conf")
@@ -20,5 +20,3 @@ for i in ${programs[@]}; do
 done
 
 echo "Done!"
-
-xrdb $HOME/.Xresources
