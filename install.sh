@@ -2,8 +2,10 @@
 
 # Use the -a flag if you want all the configs I use
 
-dotfiles=("")
-programs=("xfce4")
+dotfiles=(".Xresources")
+programs=("i3" "i3status")
+
+echo "This script assumes that you have none of the wanted config files, and will not overwrite existing ones."
 
 if [ "$1" = "-a" ]; then
     dotfiles+=(".vimrc" ".bashrc" ".tmux.conf")
