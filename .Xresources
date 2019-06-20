@@ -3,7 +3,7 @@ URxvt.font:xft:Terminus:size=8
 URxvt.scrollBar: false
 !URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
-! URxvt.internalBorder: 16
+URxvt.internalBorder: 16
 URxvt.geometry: 80x35
 
 Xcursor.size: 16
@@ -75,7 +75,7 @@ Xcursor.size: 16
 *foreground: #d6e5fb
 *background: #12151a
 *color0:     #161720
-*color8:     #12151a
+*color8:     #2B323E
 *color1:     #f0185a
 *color9:     #ff4551
 *color2:     #12e689

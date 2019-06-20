@@ -3,7 +3,7 @@
 # font
 # "Monospace" is usually installed already
 set $font Terminus
-set $size 10
+set $size 8
 
 # colors
 set_from_resource $fg i3wm.foreground #ffffff
@@ -15,7 +15,7 @@ set_from_resource $red i3wm.color1 #ff0000
 set_from_resource $acc i3wm.color1 #ff8800
 
 # modifier key
-set $mod Mod4
+set $mod Mod1
 
 # terminal
 set $term urxvt
@@ -36,7 +36,7 @@ set $ws10 "10:X"
 
 ### Autostart ###
 
-exec $HOME/.autoexec.sh
+exec $HOME/autoexec.sh
 exec evince $HOME/.dotfiles/README.pdf
 
 # notification daemon
