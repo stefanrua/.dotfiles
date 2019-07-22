@@ -5,10 +5,13 @@
 dotfiles=(".Xresources")
 programs=("i3" "i3status")
 
+echo ""
 echo "This script assumes that you have none of the wanted config files, and will not overwrite existing ones."
+echo ""
 
 if [ "$1" = "-a" ]; then
-    dotfiles+=(".vimrc" ".bashrc" ".tmux.conf")
+    dotfiles+=(".bashrc" ".tmux.conf")
+    programs+=("nvim")
 fi
 
 for i in ${dotfiles[@]}; do
