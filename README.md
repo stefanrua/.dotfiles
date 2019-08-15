@@ -101,7 +101,7 @@ man page stream of conciousness garbage? Google it.
 
 ### Configuration
 
-- `nmtui` (network manager | TUI)
+- `nmcli` (network manager)
 - `arandr` (monitor configuration | GUI)
 - `pavucontrol` (pulseaudio | GUI)
 
