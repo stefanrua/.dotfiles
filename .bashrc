@@ -116,7 +116,7 @@ fi
 # my stuff
 # 
 
-export PS1="\[\e[30;47m\]\A\[\e[m\] \w \\$ "
+export PS1="\w \\$ "
 
 
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -127,3 +127,6 @@ editor=vim
 
 alias cfi="$editor $HOME/.config/i3/config"
 alias cfx="$editor $HOME/.Xresources"
+alias bld="xbacklight -set 5"
+alias bln="xbacklight -set 30"
+alias blb="xbacklight -set 90"
