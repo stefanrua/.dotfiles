@@ -2,8 +2,8 @@
 
 # font
 # "Monospace" is usually installed already
-set $font Terminus
-set $size 8
+set $font monospace
+set $size 16
 
 # colors
 set_from_resource $fg i3wm.foreground #ffffff
@@ -15,11 +15,10 @@ set_from_resource $red i3wm.color1 #ff0000
 set_from_resource $acc i3wm.color1 #ff8800
 
 # modifier key
-set $mod Mod1
+set $mod Mod4
 
 # terminal
 set $term urxvt
-set $altterm stterm -f "Monospace-11"
 
 # workspace names
 set $ws1 "1:I"
@@ -37,7 +36,6 @@ set $ws10 "10:X"
 ### Autostart ###
 
 exec $HOME/autoexec.sh
-exec evince $HOME/.dotfiles/README.pdf
 
 # notification daemon
 exec dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
@@ -122,15 +120,14 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $altterm
 bindsym $mod+t exec $term
 
 # kill focused window
 bindsym $mod+q kill
 
 # brightness keys
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +20%
 
 # volume keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
@@ -208,5 +205,5 @@ mode "[s]uspend [h]ibernate [r]eboot [p]oweroff" {
      bindsym p mode "default"; exec systemctl poweroff
      bindsym Return mode "default"
      bindsym Escape mode "default"
-     bindsym $mod+r mode "default"
+     bindsym $mod+p mode "default"
 }

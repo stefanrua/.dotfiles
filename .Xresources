@@ -1,5 +1,4 @@
-! "Monospace" is usually installed already
-URxvt.font:xft:Terminus:size=8
+URxvt.font:xft:monospace:size=16
 URxvt.scrollBar: false
 !URxvt.letterSpace: -1
 URxvt.cursorUnderline: false
@@ -9,84 +8,125 @@ URxvt.geometry: 80x35
 Xcursor.size: 16
 !Xft.dpi:       120
 
-! ! Tomorrow Dark
-! *foreground:   #c5c8c6
-! *background:   #1d1f21
-! *cursorColor:  #c5c8c6
-! *color0:       #1d1f21
-! *color8:       #969896
-! *color1:       #cc6666
-! *color9:       #cc6666
-! *color2:       #b5bd68
-! *color10:      #b5bd68
-! *color3:       #f0c674
-! *color11:      #f0c674
-! *color4:       #81a2be
-! *color12:      #81a2be
-! *color5:       #b294bb
-! *color13:      #b294bb
-! *color6:       #8abeb7
-! *color14:      #8abeb7
-! *color7:       #c5c8c6
-! *color15:      #ffffff
+!! Tomorrow Dark
+!*foreground:   #c5c8c6
+!*background:   #1d1f21
+!*cursorColor:  #c5c8c6
+!*color0:       #1d1f21
+!*color8:       #969896
+!*color1:       #cc6666
+!*color9:       #cc6666
+!*color2:       #b5bd68
+!*color10:      #b5bd68
+!*color3:       #f0c674
+!*color11:      #f0c674
+!*color4:       #81a2be
+!*color12:      #81a2be
+!*color5:       #b294bb
+!*color13:      #b294bb
+!*color6:       #8abeb7
+!*color14:      #8abeb7
+!*color7:       #c5c8c6
+!*color15:      #ffffff
 
-! ! Dracula Xresources palette
-! *foreground: #F8F8F2
-! *background: #282A36
-! *color0:     #000000
-! *color8:     #4D4D4D
-! *color1:     #FF5555
-! *color9:     #FF6E67
-! *color2:     #50FA7B
-! *color10:    #5AF78E
-! *color3:     #F1FA8C
-! *color11:    #F4F99D
-! *color4:     #BD93F9
-! *color12:    #CAA9FA
-! *color5:     #FF79C6
-! *color13:    #FF92D0
-! *color6:     #8BE9FD
-! *color14:    #9AEDFE
-! *color7:     #BFBFBF
-! *color15:    #E6E6E6
+!! Dracula Xresources palette
+!*foreground: #F8F8F2
+!*background: #282A36
+!*color0:     #000000
+!*color8:     #4D4D4D
+!*color1:     #FF5555
+!*color9:     #FF6E67
+!*color2:     #50FA7B
+!*color10:    #5AF78E
+!*color3:     #F1FA8C
+!*color11:    #F4F99D
+!*color4:     #BD93F9
+!*color12:    #CAA9FA
+!*color5:     #FF79C6
+!*color13:    #FF92D0
+!*color6:     #8BE9FD
+!*color14:    #9AEDFE
+!*color7:     #BFBFBF
+!*color15:    #E6E6E6
 
 ! ! Solarized Light
-! *foreground:   #586e75
-! *background:   #fdf6e3
-! *cursorColor:  #586e75
-! *color0:       #002b36
-! *color8:       #657b83
-! *color1:       #dc322f
-! *color9:       #dc322f
-! *color2:       #859900
-! *color10:      #859900
-! *color3:       #b58900
-! *color11:      #b58900
-! *color4:       #268bd2
-! *color12:      #268bd2
-! *color5:       #6c71c4
-! *color13:      #6c71c4
-! *color6:       #2aa198
-! *color14:      #2aa198
-! *color7:       #93a1a1
-! *color15:      #fdf6e3
+!*foreground:   #586e75
+!*background:   #fdf6e3
+!*cursorColor:  #586e75
+!*color0:       #002b36
+!*color8:       #657b83
+!*color1:       #dc322f
+!*color9:       #dc322f
+!*color2:       #859900
+!*color10:      #859900
+!*color3:       #b58900
+!*color11:      #b58900
+!*color4:       #268bd2
+!*color12:      #268bd2
+!*color5:       #6c71c4
+!*color13:      #6c71c4
+!*color6:       #2aa198
+!*color14:      #2aa198
+!*color7:       #93a1a1
+!*color15:      #fdf6e3
 
 ! Pure
-*foreground: #d6e5fb
-*background: #12151a
-*color0:     #161720
-*color8:     #2B323E
-*color1:     #f0185a
-*color9:     #ff4551
-*color2:     #12e689
-*color10:    #3aff93
-*color3:     #ffa463
-*color11:    #ffdd74
-*color4:     #02a4fc
-*color12:    #34b0fd
-*color5:     #c00eef
-*color13:    #ef5aea
-*color6:     #26c5ff
-*color14:    #26c5ff
-*color7:     #aab5c6
-*color15:    #d6e5fb
+!*foreground: #d6e5fb
+!*background: #12151a
+!*color0:     #161720
+!*color8:     #2B323E
+!*color1:     #f0185a
+!*color9:     #ff4551
+!*color2:     #12e689
+!*color10:    #3aff93
+!*color3:     #ffa463
+!*color11:    #ffdd74
+!*color4:     #02a4fc
+!*color12:    #34b0fd
+!*color5:     #c00eef
+!*color13:    #ef5aea
+!*color6:     #26c5ff
+!*color14:    #26c5ff
+!*color7:     #aab5c6
+!*color15:    #d6e5fb
+
+! Dawn
+*foreground:   #9b9081
+*background:   #181b20
+*cursorColor:  #9b9081
+*color0:       #353535
+*color8:       #5f5f5f
+*color1:       #744b40
+*color9:       #785850
+*color2:       #6d6137
+*color10:      #6f6749
+*color3:       #765636
+*color11:      #776049
+*color4:       #61564b
+*color12:      #696057
+*color5:       #6b4a49
+*color13:      #6f5a59
+*color6:       #435861
+*color14:      #525f66
+*color7:       #b3b3b3
+
+! Grayscale
+!*foreground:   #000000
+!*background:   #f7f7f7
+!*cursorColor:  #000000
+!*color0:       #101010
+!*color8:       #525252
+!*color1:       #7c7c7c
+!*color9:       #7c7c7c
+!*color2:       #8e8e8e
+!*color10:      #8e8e8e
+!*color3:       #a0a0a0
+!*color11:      #a0a0a0
+!*color4:       #686868
+!*color12:      #686868
+!*color5:       #747474
+!*color13:      #747474
+!*color6:       #868686
+!*color14:      #868686
+!*color7:       #b9b9b9
+!*color15:      #f7f7f7

@@ -1,3 +1,2 @@
-Welcome to xfce - configured the way Stefan likes it :)
-
-You can quit this help at any time by pressing 'q'. To scroll down and up use 'j' and 'k', respectively.
+package-list: some necessary/nice packages
+xorg.conf.d/: this goes under /etc/
