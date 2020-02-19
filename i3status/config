@@ -4,16 +4,16 @@ general {
         interval = 5
 }
 
-order += "disk /"
-# order += "wireless _first_"
+# order += "disk /"
+order += "wireless _first_"
 # order += "ethernet _first_"
 order += "volume master"
 order += "battery 0"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: %quality at %essid, %bitrate"
-        format_down = "W: down"
+        format_up = "WiFi %essid"
+        format_down = "WiFi down"
 }
 
 ethernet _first_ {
@@ -30,7 +30,7 @@ battery 0 {
         status_chr = "Charging"
         status_bat = "Battery"
         status_unk = "Battery"
-        status_full = "Battery full"
+        status_full = "Full"
         path = "/sys/class/power_supply/BAT%d/uevent"
         low_threshold = 10
 }

@@ -1,16 +1,15 @@
 ### Variables ###
 
 # font
-# "Monospace" is usually installed already
 set $font monospace
-set $size 16
+set $size 10
 
 # colors
 set_from_resource $fg i3wm.foreground #ffffff
 set_from_resource $bg i3wm.background #000000
 set_from_resource $black i3wm.color0 #000000
 set_from_resource $gray i3wm.color8 #888888
-set_from_resource $white i3wm.color7 #ffffff
+set_from_resource $white i3wm.color15 #ffffff
 set_from_resource $red i3wm.color1 #ff0000
 set_from_resource $acc i3wm.color1 #ff8800
 
@@ -21,21 +20,21 @@ set $mod Mod4
 set $term urxvt
 
 # workspace names
-set $ws1 "1:I"
-set $ws2 "2:II"
-set $ws3 "3:III"
-set $ws4 "4:IV"
-set $ws5 "5:V"
-set $ws6 "6:VI"
-set $ws7 "7:VII"
-set $ws8 "8:VIII"
-set $ws9 "9:IX"
+set $ws1  "1:I"
+set $ws2  "2:II"
+set $ws3  "3:III"
+set $ws4  "4:IV"
+set $ws5  "5:V"
+set $ws6  "6:VI"
+set $ws7  "7:VII"
+set $ws8  "8:VIII"
+set $ws9  "9:IX"
 set $ws10 "10:X"
 
 
 ### Autostart ###
 
-exec $HOME/autoexec.sh
+exec $HOME/autostart
 
 # notification daemon
 exec dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
@@ -48,16 +47,19 @@ font pango: $font $size
 
 # window border colors
 # the order is:         border background text  indicator child_border
-client.focused          $fg    $fg        $bg   $fg       $fg
-client.focused_inactive $bg    $bg        $gray $bg       $bg
-client.unfocused        $bg    $bg        $gray $bg       $bg
+client.focused          $acc   $acc       $bg   $acc      $acc
+client.focused_inactive $fg    $fg        $gray $fg       $fg
+client.unfocused        $fg    $fg        $gray $fg       $fg
 client.urgent           $red   $red       $fg   $red      $red
-client.placeholder      $bg    $bg        $gray $bg       $bg
-client.background       $bg
+client.placeholder      $fg    $fg        $gray $fg       $fg
+client.background       $fg
 
 # hide borders when full screen
 hide_edge_borders smart
-default_border pixel 1
+
+# border width
+default_border pixel 2
+
 # print all window titles bold
 for_window [class=".*"] title_format "<b>%title</b>"
 
@@ -175,35 +177,38 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# toggle bar
+bindsym $mod+b bar mode toggle
+
 # focus the parent container
 bindsym $mod+a focus parent
 
 # power menu mode
 bindsym $mod+p mode "[s]uspend [h]ibernate [r]eboot [p]oweroff"
+
 # resize mode
-# (you can also resize windows using your mouse by holding
-# down $mod and dragging with the right mouse button)
 bindsym $mod+r mode "resize"
 
 # resize mode
 mode "resize" {
-        bindsym h resize shrink width 100 px or 10 ppt
-        bindsym j resize grow height 100 px or 10 ppt
-        bindsym k resize shrink height 100 px or 10 ppt
-        bindsym l resize grow width 100 px or 10 ppt
+	bindsym h resize shrink width 100 px or 10 ppt
+	bindsym j resize grow height 100 px or 10 ppt
+	bindsym k resize shrink height 100 px or 10 ppt
+	bindsym l resize grow width 100 px or 10 ppt
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+r mode "default"
 }
 
 # power menu mode
 mode "[s]uspend [h]ibernate [r]eboot [p]oweroff" {
-     bindsym s mode "default"; exec systemctl suspend
-     bindsym h mode "default"; exec systemctl hibernate
-     bindsym r mode "default"; exec systemctl reboot
-     bindsym p mode "default"; exec systemctl poweroff
-     bindsym Return mode "default"
-     bindsym Escape mode "default"
-     bindsym $mod+p mode "default"
+	bindsym s mode "default"; exec systemctl suspend
+	bindsym h mode "default"; exec systemctl hibernate
+	bindsym r mode "default"; exec systemctl reboot
+	bindsym p mode "default"; exec systemctl poweroff
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+p mode "default"
 }

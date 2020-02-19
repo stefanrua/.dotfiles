@@ -1,2 +1,5 @@
-package-list: some necessary/nice packages
+pkglist: some necessary/nice packages (usage: apt install $(cat pkglist))
 xorg.conf.d/: this goes under /etc/
+
+Dpi is changed in .Xresources
+Fonts are changed in .Xresources and i3/config
