@@ -34,10 +34,10 @@ set $ws10 "10:X"
 
 ### Autostart ###
 
-exec $HOME/autostart
+exec --no-startup-id $HOME/autostart
 
 # notification daemon
-exec dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
+exec --no-startup-id dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
 
 
 ### Bar/window borders ###
@@ -128,19 +128,19 @@ bindsym $mod+t exec $term
 bindsym $mod+q kill
 
 # brightness keys
-bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +20%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +20%
 
 # volume keys
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # take screenshot
-bindsym Print exec scrot; exec notify-send "screenshot captured"
+bindsym Print exec --no-startup-id scrot; exec --no-startup-id notify-send "screenshot captured"
 
 # start dmenu (a program launcer)
-bindsym $mod+d exec dmenu_run -i -nb "$bg" -nf "$fg" -sb "$acc" -sf "$bg" -fn "$font-$size"
+bindsym $mod+d exec --no-startup-id dmenu_run -i -nb "$bg" -nf "$fg" -sb "$acc" -sf "$bg" -fn "$font-$size"
 
 # change focus
 bindsym $mod+h focus left
