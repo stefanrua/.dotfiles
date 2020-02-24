@@ -184,7 +184,7 @@ bindsym $mod+b bar mode toggle
 bindsym $mod+a focus parent
 
 # power menu mode
-bindsym $mod+p mode "[s]uspend [h]ibernate [r]eboot [p]oweroff"
+bindsym $mod+Shift+p mode "[s]uspend [h]ibernate [r]eboot [p]oweroff"
 
 # resize mode
 bindsym $mod+r mode "resize"
@@ -210,5 +210,5 @@ mode "[s]uspend [h]ibernate [r]eboot [p]oweroff" {
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
-	bindsym $mod+p mode "default"
+	bindsym $mod+Shift+p mode "default"
 }
