@@ -51,11 +51,11 @@ font pango: $font $size
 # window border colors
 # the order is:         border background text  indicator child_border
 client.focused          $acc   $acc       $bg   $acc      $acc
-client.focused_inactive $fg    $fg        $gray $fg       $fg
-client.unfocused        $fg    $fg        $gray $fg       $fg
-client.urgent           $red   $red       $fg   $red      $red
-client.placeholder      $fg    $fg        $gray $fg       $fg
-client.background       $fg
+client.focused_inactive $gray  $gray      $gray $gray     $gray
+client.unfocused        $gray  $gray      $gray $gray     $gray
+client.urgent           $red   $red       $gray $red      $red
+client.placeholder      $gray  $gray      $gray $gray     $gray
+client.background       $gray
 
 # hide borders when full screen
 hide_edge_borders smart
