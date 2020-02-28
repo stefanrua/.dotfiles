@@ -1,5 +1,12 @@
-pkglist: some necessary/nice packages (usage: apt install $(cat pkglist))
-xorg.conf.d/: this goes under /etc/
+pkglist:
+	Some necessary/nice packages. These are Debian package names, so they
+	might not work for you if you're running something else.
+	Usage:
+		apt install $(cat pkglist)
 
-Dpi is changed in .Xresources
-Fonts are changed in .Xresources and i3/config
+xorg.conf.d/:
+	Display and input device configs, these go under /etc/.
+
+* Dpi is changed in .Xresources
+* Fonts are changed in .Xresources and i3/config
+* For the command 'wal' install pywal (pip3 install pywal)
