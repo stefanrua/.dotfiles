@@ -1,4 +1,4 @@
-Xft.dpi: 144
+!Xft.dpi: 144
 
 URxvt.font:xft:monospace:size=10
 URxvt.scrollBar: false
@@ -45,25 +45,26 @@ URxvt.geometry: 80x35
 !*color14:    #9AEDFE
 !*color7:     #BFBFBF
 !*color15:    #E6E6E6
+
 ! Pure
-!*foreground: #d6e5fb
-!*background: #12151a
-!*color0:     #161720
-!*color8:     #2B323E
-!*color1:     #f0185a
-!*color9:     #ff4551
-!*color2:     #12e689
-!*color10:    #3aff93
-!*color3:     #ffa463
-!*color11:    #ffdd74
-!*color4:     #02a4fc
-!*color12:    #34b0fd
-!*color5:     #c00eef
-!*color13:    #ef5aea
-!*color6:     #26c5ff
-!*color14:    #26c5ff
-!*color7:     #aab5c6
-!*color15:    #d6e5fb
+*foreground: #d6e5fb
+*background: #12151a
+*color0:     #161720
+*color8:     #2B323E
+*color1:     #f0185a
+*color9:     #ff4551
+*color2:     #12e689
+*color10:    #3aff93
+*color3:     #ffa463
+*color11:    #ffdd74
+*color4:     #02a4fc
+*color12:    #34b0fd
+*color5:     #c00eef
+*color13:    #ef5aea
+*color6:     #26c5ff
+*color14:    #26c5ff
+*color7:     #aab5c6
+*color15:    #d6e5fb
 
 ! Dawn
 !*foreground:   #9b9081
@@ -107,25 +108,25 @@ URxvt.geometry: 80x35
 !*color15:      #f7f7f7
 
 ! Eighties (light)
-*foreground:   #515151
-*background:   #f2f0ec
-*cursorColor:  #515151
-*color0:       #2d2d2d
-*color8:       #747369
-*color1:       #f2777a
-*color9:       #f2777a
-*color2:       #99cc99
-*color10:      #99cc99
-*color3:       #ffcc66
-*color11:      #ffcc66
-*color4:       #6699cc
-*color12:      #6699cc
-*color5:       #cc99cc
-*color13:      #cc99cc
-*color6:       #66cccc
-*color14:      #66cccc
-*color7:       #d3d0c8
-*color15:      #f2f0ec
+!*foreground:   #515151
+!*background:   #f2f0ec
+!*cursorColor:  #515151
+!*color0:       #2d2d2d
+!*color8:       #747369
+!*color1:       #f2777a
+!*color9:       #f2777a
+!*color2:       #99cc99
+!*color10:      #99cc99
+!*color3:       #ffcc66
+!*color11:      #ffcc66
+!*color4:       #6699cc
+!*color12:      #6699cc
+!*color5:       #cc99cc
+!*color13:      #cc99cc
+!*color6:       #66cccc
+!*color14:      #66cccc
+!*color7:       #d3d0c8
+!*color15:      #f2f0ec
 
 ! Gently holding a frog
 !*foreground:        #eae0db
