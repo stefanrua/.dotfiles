@@ -1,4 +1,3 @@
 xrdb ~/.Xresources
-#wal -R
-xsetroot -solid white
+xsetroot -solid slategray
 exec i3
