@@ -51,10 +51,10 @@ font pango: $font $size
 # window border colors
 # the order is:         border background text  indicator child_border
 client.focused          $acc   $acc       $bg   $acc      $acc
-client.focused_inactive $gray  $gray      $gray $gray     $gray
-client.unfocused        $gray  $gray      $gray $gray     $gray
-client.urgent           $red   $red       $gray $red      $red
-client.placeholder      $gray  $gray      $gray $gray     $gray
+client.focused_inactive $gray  $gray      $bg   $gray     $gray
+client.unfocused        $gray  $gray      $bg   $gray     $gray
+client.urgent           $red   $red       $bg   $red      $red
+client.placeholder      $gray  $gray      $bg   $gray     $gray
 client.background       $gray
 
 # hide borders when full screen
@@ -131,8 +131,8 @@ bindsym $mod+t exec $term
 bindsym $mod+q kill
 
 # brightness keys
-bindsym XF86MonBrightnessDown $nexec brightnessctl set 20%-
-bindsym XF86MonBrightnessUp $nexec brightnessctl set +20%
+bindsym XF86MonBrightnessDown $nexec brightnessctl set 10%-
+bindsym XF86MonBrightnessUp $nexec brightnessctl set +10%
 
 # volume keys
 bindsym XF86AudioRaiseVolume $nexec pactl set-sink-volume 0 +5%
