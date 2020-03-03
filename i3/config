@@ -37,7 +37,7 @@ set $nexec exec --no-startup-id
 
 ### Autostart ###
 
-$nexec $HOME/autostart
+$nexec $HOME/.autostart
 
 # notification daemon
 $nexec dunst -frame_width 2 -frame_color "$acc" -fn "$font $size" -lb "$bg" -nb "$bg" -cb "$acc" -lf "$fg" -nf "$fg" -cf "$bg" -lto 3 -nto 5 -cto 0 -align "center" -padding 16 -horizontal_padding 16
