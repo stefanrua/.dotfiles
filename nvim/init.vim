@@ -1,4 +1,4 @@
-" Plugins {{{
+" Plugins{{{
 
 " Install plugin manager
 "if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
@@ -13,7 +13,7 @@
 "call plug#end()
 
 " Plugin options
-"let g:vimchant_spellcheck_lang = 'fi' }}}
+"let g:vimchant_spellcheck_lang = 'fi'}}}
 
 " Movement
 nnoremap j gj
