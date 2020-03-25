@@ -13,8 +13,8 @@ neovim
 network-manager
 nnn
 pulseaudio
+pulseaudio-module-bluetooth
 rxvt-unicode
 scrot
 slock
 xorg
-pulseaudio-module-bluetooth

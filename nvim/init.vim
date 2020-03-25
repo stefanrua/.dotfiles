@@ -1,5 +1,3 @@
-" Plugins{{{
-
 " Install plugin manager
 "if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 "  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -13,7 +11,7 @@
 "call plug#end()
 
 " Plugin options
-"let g:vimchant_spellcheck_lang = 'fi'}}}
+"let g:vimchant_spellcheck_lang = 'fi'
 
 " Movement
 nnoremap j gj
@@ -26,3 +24,4 @@ syntax off
 set foldmethod=marker
 set ignorecase
 au FileType gitcommit set tw=72 " wrap at 72 chars for git commits
+highlight NonText ctermfg=8
