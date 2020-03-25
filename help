@@ -4,8 +4,7 @@ pkglist:
 	Usage:
 		apt install $(cat pkglist)
 
-xorg.conf.d/:
-	Display and input device configs, these go under /etc/.
+/etc/X11/xorg.conf.d/40-libinput.conf
 
 * Dpi is changed in .Xresources
 * Fonts are changed in .Xresources and i3/config

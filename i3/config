@@ -136,9 +136,9 @@ bindsym XF86MonBrightnessDown $nexec brightnessctl set 10%-
 bindsym XF86MonBrightnessUp $nexec brightnessctl set +10%
 
 # volume keys
-bindsym XF86AudioRaiseVolume $nexec pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume $nexec pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute $nexec pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume $nexec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume $nexec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute $nexec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # take screenshot
 bindsym Print $nexec scrot; $nexec notify-send "screenshot captured"

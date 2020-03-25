@@ -17,3 +17,4 @@ export PATH
 
 # User specific aliases and functions
 alias vi='nvim'
+alias x='startx'

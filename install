@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=(".bashrc .xinitrc .Xresources")
+dotfiles=(".profile .bashrc .xinitrc .Xresources")
 configs=("nvim i3 i3status")
 
 for i in ${dotfiles[@]}; do
