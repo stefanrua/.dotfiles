@@ -17,8 +17,8 @@ wireless _first_ {
 }
 
 ethernet _first_ {
-        format_down = "Ethernet: up"
-        format_down = "Ethernet: down"
+        format_down = "Ethernet up"
+        format_down = "Ethernet down"
 }
 
 battery 0 {
