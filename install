@@ -1,14 +1,14 @@
 #!/bin/bash
 
-dotfiles=(".profile .bashrc .xinitrc .Xresources")
-configs=("nvim i3 i3status")
+dotfiles=(".profile" ".bashrc" ".xinitrc" ".Xresources")
+configs=("nvim" "i3" "i3status")
 
-for i in ${dotfiles[@]}; do
+for i in "${dotfiles[@]}"; do
     echo "Symlinking $i..."
     ln -s $PWD/$i $HOME/
 done
 
-for i in ${configs[@]}; do
+for i in "${configs[@]}"; do
     echo "Symlinking $i..."
     ln -s $PWD/$i $HOME/.config/
 done
