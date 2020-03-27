@@ -2,6 +2,7 @@ acpi
 arandr
 brightnessctl
 cmus
+curl
 dmenu
 dunst
 feh
