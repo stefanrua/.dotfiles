@@ -182,8 +182,8 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # toggle bar
-bindsym $mod+b bar mode invisible
-bindsym $mod+Shift+b bar mode dock
+bindsym $mod+b bar mode dock
+bindsym $mod+Shift+b bar mode invisible
 
 # focus the parent container
 bindsym $mod+a focus parent
