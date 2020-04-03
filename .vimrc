@@ -7,3 +7,4 @@ vnoremap k gk
 " Misc
 syntax off
 set ignorecase
+set guioptions=
