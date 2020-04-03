@@ -4,7 +4,12 @@ pkglist:
 	Usage:
 		apt install $(cat pkglist)
 
-/etc/X11/xorg.conf.d/40-libinput.conf
+path for 40-libinput.conf:
+	/etc/X11/xorg.conf.d/40-libinput.conf
+
+applying gnome preferences:
+	dconf load /org/gnome/ < gnome-preferences.dconf
+
 
 * Dpi is changed in .Xresources
 * Fonts are changed in .Xresources and i3/config
