@@ -131,7 +131,7 @@ bindsym $mod+t exec $term
 bindsym $mod+q kill
 
 # brightness keys
-bindsym $mod+Shift+d $nexec brightnessctl set 1%
+bindsym $mod+Shift+d $nexec brightnessctl set 1%; $nexec redshift -oP
 bindsym XF86MonBrightnessDown $nexec brightnessctl set 10%-
 bindsym XF86MonBrightnessUp $nexec brightnessctl set +10%
 
