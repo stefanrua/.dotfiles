@@ -11,7 +11,7 @@ set_from_resource $black i3wm.color0 #000000
 set_from_resource $gray i3wm.color8 #888888
 set_from_resource $white i3wm.color15 #ffffff
 set_from_resource $red i3wm.color1 #ff0000
-set_from_resource $acc i3wm.color1 #ff8800
+set_from_resource $acc i3wm.foreground #ff8800
 
 # modifier key
 set $mod Mod4
@@ -131,7 +131,7 @@ bindsym $mod+t exec $term
 bindsym $mod+q kill
 
 # brightness keys
-bindsym $mod+Shift+d $nexec brightnessctl set 1%; $nexec redshift -oP
+bindsym $mod+Shift+d $nexec brightnessctl set 1%
 bindsym XF86MonBrightnessDown $nexec brightnessctl set 10%-
 bindsym XF86MonBrightnessUp $nexec brightnessctl set +10%
 
