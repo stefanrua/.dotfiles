@@ -11,6 +11,7 @@ libnotify-bin
 mupdf
 neovim
 network-manager
+volumeicon-alsa
 nnn
 pulseaudio
 pulseaudio-module-bluetooth
