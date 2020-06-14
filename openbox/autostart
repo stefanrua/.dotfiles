@@ -1,5 +1,6 @@
+xrdb ~/.Xresources
 #xsetroot -solid lightyellow &
-feh --bg-fill ~/Pictures/koksinel.jpg
+feh --bg-fill ~/Pictures/koksinel.jpg &
 nm-applet &
 volumeicon &
 dunst &
