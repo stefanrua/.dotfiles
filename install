@@ -13,7 +13,6 @@ for i in "${configs[@]}"; do
     ln -s $PWD/$i $HOME/.config/
 done
 
-
 echo "Symlinking .vimrc..."
 ln -s $HOME/.config/nvim/init.vim $HOME/.vimrc
 
