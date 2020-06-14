@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dotfiles=(".vimrc" ".bashrc" ".xinitrc" ".Xresources")
-configs=("i3" "i3status")
+configs=("openbox" "tint2")
 
 for i in "${dotfiles[@]}"; do
     echo "Symlinking $i..."

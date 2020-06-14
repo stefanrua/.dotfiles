@@ -68,6 +68,7 @@ for_window [class=".*"] title_format "<b>%title</b>"
 
 # bar colors
 bar {
+    position bottom
     status_command i3status
     separator_symbol "   "
     strip_workspace_numbers yes
@@ -145,6 +146,7 @@ bindsym Print $nexec scrot; $nexec notify-send "screenshot captured"
 
 # start dmenu (a program launcer)
 bindsym $mod+d $nexec dmenu_run -i -nb "$bg" -nf "$fg" -sb "$acc" -sf "$bg" -fn "$font-$size"
+bindsym $mod+p $nexec dmenu_run -i -nb "$bg" -nf "$fg" -sb "$acc" -sf "$bg" -fn "$font-$size"
 
 # change focus
 bindsym $mod+h focus left

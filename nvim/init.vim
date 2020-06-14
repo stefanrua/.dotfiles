@@ -30,3 +30,8 @@ set foldmethod=marker
 set ignorecase
 au FileType gitcommit set tw=72 " wrap at 72 chars for git commits
 highlight NonText ctermfg=8
+
+set expandtab
+set tabstop     =4
+set softtabstop =4
+set shiftwidth  =4

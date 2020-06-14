@@ -1,3 +1,2 @@
 xrdb ~/.Xresources
-xsetroot -solid slategray
-exec i3
+exec openbox-session

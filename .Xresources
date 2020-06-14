@@ -1,6 +1,7 @@
-!Xft.dpi: 144
+Xft.dpi: 144
 
 URxvt.font:xft:monospace:size=10
+!URxvt.font:xft:terminus-bold:size=14:style=bold
 URxvt.scrollBar: false
 URxvt.internalBorder: 16
 URxvt.geometry: 80x35
@@ -45,6 +46,27 @@ URxvt.geometry: 80x35
 !*color14:    #9AEDFE
 !*color7:     #BFBFBF
 !*color15:    #E6E6E6
+
+! Hmm
+!*foreground: #000000
+!*background: #ffffff
+!*color0:     #888888
+!*color8:     #888888
+!*color1:     #888888
+!*color9:     #888888
+!*color2:     #888888
+!*color10:    #888888
+!*color3:     #888888
+!*color11:    #888888
+!*color4:     #888888
+!*color12:    #888888
+!*color5:     #888888
+!*color13:    #888888
+!*color6:     #888888
+!*color14:    #888888
+!*color7:     #888888
+!*color15:    #888888
+
 
 ! Pure
 *foreground: #d6e5fb
