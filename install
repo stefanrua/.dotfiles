@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=(".vimrc" ".bashrc" ".xinitrc" ".Xresources")
+dotfiles=(".vimrc" ".bashrc" ".xinitrc" ".Xresources" ".themes")
 configs=("openbox" "tint2")
 
 for i in "${dotfiles[@]}"; do

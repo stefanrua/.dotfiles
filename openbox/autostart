@@ -1,3 +1,4 @@
 xsetroot -solid maroon &
 nm-applet &
+dunst &
 tint2 &
