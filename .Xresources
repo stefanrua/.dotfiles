@@ -6,27 +6,6 @@ URxvt.scrollBar: false
 URxvt.internalBorder: 16
 URxvt.geometry: 80x35
 
-! Tomorrow Dark
-!*foreground:   #c5c8c6
-!*background:   #1d1f21
-!*cursorColor:  #c5c8c6
-!*color0:       #1d1f21
-!*color8:       #969896
-!*color1:       #cc6666
-!*color9:       #cc6666
-!*color2:       #b5bd68
-!*color10:      #b5bd68
-!*color3:       #f0c674
-!*color11:      #f0c674
-!*color4:       #81a2be
-!*color12:      #81a2be
-!*color5:       #b294bb
-!*color13:      #b294bb
-!*color6:       #8abeb7
-!*color14:      #8abeb7
-!*color7:       #c5c8c6
-!*color15:      #ffffff
-
 ! Dracula
 !*foreground: #F8F8F2
 !*background: #282A36
@@ -67,10 +46,10 @@ URxvt.geometry: 80x35
 !*color7:     #888888
 !*color15:    #888888
 
-
-! Pure
-*foreground: #d6e5fb
-*background: #12151a
+! Pure-edit
+*foreground: #ffffff
+!*background: #12151a
+*background: #111111
 *color0:     #161720
 *color8:     #2B323E
 *color1:     #f0185a
@@ -88,25 +67,25 @@ URxvt.geometry: 80x35
 *color7:     #aab5c6
 *color15:    #d6e5fb
 
-! Dawn
-!*foreground:   #9b9081
-!*background:   #181b20
-!*cursorColor:  #9b9081
-!*color0:       #353535
-!*color8:       #5f5f5f
-!*color1:       #744b40
-!*color9:       #785850
-!*color2:       #6d6137
-!*color10:      #6f6749
-!*color3:       #765636
-!*color11:      #776049
-!*color4:       #61564b
-!*color12:      #696057
-!*color5:       #6b4a49
-!*color13:      #6f5a59
-!*color6:       #435861
-!*color14:      #525f66
-!*color7:       #b3b3b3
+! Pure
+!*foreground: #d6e5fb
+!*background: #12151a
+!*color0:     #161720
+!*color8:     #2B323E
+!*color1:     #f0185a
+!*color9:     #ff4551
+!*color2:     #12e689
+!*color10:    #3aff93
+!*color3:     #ffa463
+!*color11:    #ffdd74
+!*color4:     #02a4fc
+!*color12:    #34b0fd
+!*color5:     #c00eef
+!*color13:    #ef5aea
+!*color6:     #26c5ff
+!*color14:    #26c5ff
+!*color7:     #aab5c6
+!*color15:    #d6e5fb
 
 ! Grayscale
 !*foreground:   #000000
@@ -128,44 +107,3 @@ URxvt.geometry: 80x35
 !*color14:      #868686
 !*color7:       #b9b9b9
 !*color15:      #f7f7f7
-
-! Eighties (light)
-!*foreground:   #515151
-!*background:   #f2f0ec
-!*cursorColor:  #515151
-!*color0:       #2d2d2d
-!*color8:       #747369
-!*color1:       #f2777a
-!*color9:       #f2777a
-!*color2:       #99cc99
-!*color10:      #99cc99
-!*color3:       #ffcc66
-!*color11:      #ffcc66
-!*color4:       #6699cc
-!*color12:      #6699cc
-!*color5:       #cc99cc
-!*color13:      #cc99cc
-!*color6:       #66cccc
-!*color14:      #66cccc
-!*color7:       #d3d0c8
-!*color15:      #f2f0ec
-
-! Gently holding a frog
-!*foreground:        #eae0db
-!*background:        #0D0102
-!*color0:  #0D0102
-!*color1:  #B66146
-!*color2:  #A5886B
-!*color3:  #E0926F
-!*color4:  #AD7E80
-!*color5:  #ECAD90
-!*color6:  #D8B5A3
-!*color7:  #eae0db
-!*color8:  #a39c99
-!*color9:  #B66146
-!*color10:  #A5886B
-!*color11:  #E0926F
-!*color12:  #AD7E80
-!*color13:  #ECAD90
-!*color14:  #D8B5A3
-!*color15:  #eae0db

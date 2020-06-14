@@ -376,7 +376,7 @@
     </keybind>
     <keybind key="W-d">
       <action name="Execute">
-        <command>dmenu_run</command>
+        <command>dmenu_run -nb black -sb white -nf white -sf black</command>
       </action>
     </keybind>
     <!-- Launch scrot when Print is pressed -->
