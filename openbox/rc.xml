@@ -227,53 +227,53 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="A-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-2">
+    <keybind key="A-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-3">
+    <keybind key="A-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-4">
+    <keybind key="A-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-S-1">
+    <keybind key="A-S-1">
       <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-S-2">
+    <keybind key="A-S-2">
       <action name="SendToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-S-3">
+    <keybind key="A-S-3">
       <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-S-4">
+    <keybind key="A-S-4">
       <action name="SendToDesktop">
         <to>4</to>
       </action>
     </keybind>
     <!--
-    <keybind key="W-d">
+    <keybind key="A-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     -->
     <!-- Keybindings for windows -->
-    <keybind key="W-q">
+    <keybind key="A-q">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -348,33 +348,33 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
+    <keybind key="A-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Left">
+    <keybind key="A-S-Left">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Up">
+    <keybind key="A-S-Up">
       <action name="DirectionalCycleWindows">
         <direction>up</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Down">
+    <keybind key="A-S-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-Return">
+    <keybind key="A-Return">
       <action name="Execute">
         <command>urxvt</command>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="A-d">
       <action name="Execute">
         <command>dmenu_run -nb black -sb white -nf white -sf black</command>
       </action>
