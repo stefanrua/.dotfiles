@@ -8,10 +8,10 @@ dunst
 feh
 i3
 libnotify-bin
+lxappearance
 mupdf
 neovim
 network-manager
-volumeicon-alsa
 nnn
 pulseaudio
 pulseaudio-module-bluetooth
@@ -19,4 +19,5 @@ redshift
 rxvt-unicode
 scrot
 slock
+volumeicon-alsa
 xorg
