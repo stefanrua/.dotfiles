@@ -28,8 +28,9 @@ vnoremap k gk
 syntax off
 set foldmethod=marker
 set ignorecase
-au FileType gitcommit set tw=72 " wrap at 72 chars for git commits
+autocmd FileType gitcommit set tw=72 " wrap at 72 chars for git commits
 highlight NonText ctermfg=8
+highlight ErrorMsg ctermfg=1 ctermbg=0
 
 set expandtab
 set tabstop     =4
