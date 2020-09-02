@@ -1,7 +1,7 @@
 #!/bin/bash
 
-dotfiles=(".bashrc" ".xinitrc" ".Xresources" ".themes")
-configs=("nvim" "openbox" "tint2")
+dotfiles=(".vimrc" ".bashrc" ".xmonad" ".xmobar" ".xinitrc" ".Xresources")
+configs=()
 
 for i in "${dotfiles[@]}"; do
     echo "Symlinking $i..."
@@ -12,8 +12,5 @@ for i in "${configs[@]}"; do
     echo "Symlinking $i..."
     ln -s $PWD/$i $HOME/.config/
 done
-
-echo "Symlinking .vimrc..."
-ln -s $HOME/.config/nvim/init.vim $HOME/.vimrc
 
 echo "Done!"
