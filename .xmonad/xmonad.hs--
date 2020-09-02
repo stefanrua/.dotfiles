@@ -1,0 +1,35 @@
+import XMonad
+import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ManageDocks
+import XMonad.Util.EZConfig(additionalKeys, additionalKeysP)
+import XMonad.Util.Run(spawnPipe)
+import XMonad.Config.Desktop
+--import XMonad.Config.Gnome
+--import XMonad.Hooks.ManageHelpers
+--import System.IO
+import Graphics.X11.ExtraTypes.XF86
+
+main = do
+  --xmproc <- spawnPipe "tint2"
+  --nm <- spawnPipe "nm-applet"
+  xmonad $ desktopConfig
+    { modMask = myModMask
+    , terminal = "termite"
+    , borderWidth = 3
+    , layoutHook = avoidStruts $ layoutHook defaultConfig
+    , manageHook = manageHook defaultConfig <+> manageDocks
+    } `additionalKeysP` myKeys
+
+myModMask = mod4Mask -- Use Super instead of Alt
+
+myKeys =  [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ +1.5%")
+          , ("<XF86AudioLowerVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@  -1.5%")
+          , ("<XF86AudioMute>", spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")    
+
+          , ("<XF86AudioPlay>", spawn "playerctl play-pause")    
+          , ("<XF86AudioPrev>", spawn "playerctl previous")    
+          , ("<XF86AudioNext>", spawn "playerctl next")    
+
+          , ("<XF86MonBrightnessUp>", spawn "lux -a 5%")    
+          , ("<XF86MonBrightnessDown>", spawn "lux -s 5%")    
+          ]

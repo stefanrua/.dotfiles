@@ -1,0 +1,24 @@
+Config { font = "xft:monospace:size=10"
+       , additionalFonts = []
+       , borderColor = "black"
+       , border = NoBorder
+       , bgColor = "#101010"
+       , fgColor = "#C0C0C0"
+       , alpha = 255
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Date "%H:%M:%S" "date" 10 
+                    , Run Battery ["-t", "<left>%"] 10
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "}%date% // %battery%{"
+       }
