@@ -1,4 +1,4 @@
-Xft.dpi: 144
+!Xft.dpi: 144
 
 URxvt.font:xft:monospace:size=10
 !URxvt.font:xft:terminus-bold:size=14:style=bold
