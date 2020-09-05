@@ -1,6 +1,7 @@
 import XMonad
 import XMonad.Layout.Spacing
 import XMonad.Layout.NoBorders
+import XMonad.Layout.Fullscreen
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.EZConfig(additionalKeys, additionalKeysP)
 import Graphics.X11.ExtraTypes.XF86

@@ -1,2 +1,2 @@
 xrdb ~/.Xresources
-exec xmonad
+exec i3
