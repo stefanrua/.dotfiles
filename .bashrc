@@ -128,7 +128,7 @@ export PATH
 export PS1="\w \\$ "
 
 # User specific aliases and functions
-alias vi='nvim'
+alias vi='vim'
 alias x='startx'
 alias poweroff='systemctl poweroff'
 alias suspend='systemctl suspend'

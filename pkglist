@@ -1,4 +1,3 @@
-acpi
 arandr
 brightnessctl
 cmus
@@ -6,11 +5,11 @@ curl
 dmenu
 dunst
 feh
+firefox-esr
 i3
 libnotify-bin
 lxappearance
 mupdf
-neovim
 network-manager
 nnn
 pulseaudio
@@ -19,5 +18,6 @@ redshift
 rxvt-unicode
 scrot
 slock
+vim
 volumeicon-alsa
 xorg
