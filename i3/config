@@ -185,7 +185,7 @@ bindsym $mod+Shift+l move right 100 px
 bindsym $mod+v split toggle
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -197,10 +197,6 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
-
-# toggle bar
-bindsym $mod+b bar mode dock
-bindsym $mod+Shift+b bar mode invisible
 
 # focus the parent container
 bindsym $mod+a focus parent
