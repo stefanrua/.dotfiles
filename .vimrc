@@ -1,4 +1,5 @@
 syntax off
+set guioptions=
 set ignorecase
 set expandtab
 set tabstop     =4
