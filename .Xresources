@@ -6,8 +6,8 @@ URxvt.scrollBar: false
 URxvt.internalBorder: 16
 URxvt.geometry: 80x35
 
-! A nice one from reddit
-*foreground:   #C0C0C0
+! My take on that nice one from reddit
+*foreground:   #ffffff
 *background:   #101010
 *color0:       #101010
 *color8:       #454545
@@ -24,7 +24,27 @@ URxvt.geometry: 80x35
 *color6:       #50CACD
 *color14:      #74C3E4
 *color7:       #808080
-*color15:      #C0C0C0
+*color15:      #ffffff
+
+! A nice one from reddit
+!*foreground:   #C0C0C0
+!*background:   #101010
+!*color0:       #101010
+!*color8:       #454545
+!*color1:       #EFA6A2
+!*color9:       #E0AF85
+!*color2:       #80C990
+!*color10:      #5ACCAF
+!*color3:       #A69460
+!*color11:      #C8C874
+!*color4:       #A3B8EF
+!*color12:      #CCACED
+!*color5:       #E6A3DC
+!*color13:      #F2A1C2
+!*color6:       #50CACD
+!*color14:      #74C3E4
+!*color7:       #808080
+!*color15:      #C0C0C0
 
 ! Dracula
 !*foreground: #F8F8F2
