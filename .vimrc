@@ -1,4 +1,5 @@
 syntax off
+set autoindent
 set guioptions=
 set ignorecase
 set expandtab
