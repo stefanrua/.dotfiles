@@ -117,6 +117,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# User preferred editor
+export EDITOR='vi'
+export VISUAL='vi'
+
 # User specific environment
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/bin:$PATH"
