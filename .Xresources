@@ -1,7 +1,6 @@
 !Xft.dpi: 144
 
 URxvt.font:xft:monospace:size=10
-!URxvt.font:xft:terminus-bold:size=14:style=bold
 URxvt.scrollBar: false
 URxvt.internalBorder: 16
 URxvt.geometry: 80x35
