@@ -1,8 +1,6 @@
 #!/bin/bash
 
 dotfiles=(".bashrc" ".vimrc" ".tmux.conf")
-configs=()
-xorgconfs=()
 force=""
 
 if [ "$1" == "-f" ]; then
@@ -15,25 +13,13 @@ for i in "${dotfiles[@]}"; do
     ln -s $force $PWD/$i $HOME/
 done
 
-echo "Symlinking to $HOME/.config/"
-for i in "${configs[@]}"; do
-    echo "    $i"
-    ln -s $force $PWD/$i $HOME/.config/
-done
-
-echo "Symlinking to /etc/X11/xorg.conf.d/"
-for i in "${xorgconfs[@]}"; do
-    echo "    $i"
-    sudo ln -s $force $PWD/$i /etc/X11/xorg.conf.d/
-done
-
-echo -n "Install packages from the pkglist file (Y/n)? "
+echo -n "Install packages from the pkglist file? [y/N]: "
 read answer
 
-if [ "$answer" != "${answer#[Nn]}" ]; then
-    echo "Skipping package installation"
+if [ "$answer" != "${answer#[Yy]}" ]; then
+    sudo dnf install $(cat pkglist)
 else
-    sudo apt install $(cat pkglist)
+    echo "Skipping package installation"
 fi
 
 echo "Done!"
