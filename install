@@ -1,8 +1,8 @@
 #!/bin/bash
 
-dotfiles=(".vimrc" ".bashrc" ".xinitrc" ".Xresources" ".tmux.conf")
-configs=("i3" "i3status")
-xorgconfs=("40-libinput.conf")
+dotfiles=(".bashrc" ".vimrc" ".tmux.conf")
+configs=()
+xorgconfs=()
 force=""
 
 if [ "$1" == "-f" ]; then
