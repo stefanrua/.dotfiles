@@ -1,0 +1,9 @@
+[/]
+control-center=@as []
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+mic-mute=['<Super>m']
+
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='gnome-terminal'
+name='Terminal'
