@@ -1,8 +1,2 @@
-
-https://askubuntu.com/questions/682513/how-to-backup-restore-system-custom-keyboard-shortcuts
-
-/org/gnome/desktop/wm/keybindings/
-/org/gnome/settings-daemon/plugins/media-keys/
-
-dconf dump ... > file.dconf
-dconf load ... < file.dconf
+Gnome extensions:
+ - Disable workspace switcher popup
