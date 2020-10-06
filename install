@@ -1,24 +1,23 @@
 #!/bin/bash
 
 dotfiles=(".bashrc" ".vimrc" ".tmux.conf")
-xorgconfs=("input.conf")
 force=""
 
 if [ "$1" == "-f" ]; then
     force="$1"
 fi
 
-echo "Symlinking to $HOME/"
+echo "Symlinking dotfiles to $HOME/"
 for i in "${dotfiles[@]}"; do
     echo "    $i"
     ln -s $force $PWD/$i $HOME/
 done
 
-echo "Symlinking to /etc/X11/xorg.conf.d/"
-for i in "${xorgconfs[@]}"; do
-    echo "    $i"
-    ln -s $force $PWD/$i /etc/X11/xorg.conf.d/
-done
+echo "Loading GNOME keybindings"
+echo "    keybindings.dconf"
+dconf load /org/gnome/desktop/wm/keybindings/ < keybindings.dconf
+echo "    keybindings-extra.dconf"
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < keybindings-extra.dconf
 
 echo -n "Install packages from the pkglist file? [y/N]: "
 read answer
