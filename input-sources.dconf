@@ -1,4 +1,4 @@
 [/]
 current=uint32 0
 sources=[('xkb', 'us+altgr-intl')]
-xkb-options=['lv3:ralt_switch']
+xkb-options=['caps:ctrl_modifier', 'lv3:ralt_switch']
