@@ -1,5 +1,6 @@
 #!/bin/bash
 
-dconf dump /org/gnome/desktop/wm/ > wm.dconf
+dconf dump /org/gnome/desktop/input-sources/ > input-sources.dconf
 dconf dump /org/gnome/desktop/peripherals/mouse/ > mouse.dconf
+dconf dump /org/gnome/desktop/wm/ > wm.dconf
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > media-keys.dconf
