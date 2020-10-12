@@ -7,16 +7,13 @@ if [ "$1" == "-f" ]; then
     force="$1"
 fi
 
-echo "Symlinking dotfiles to $HOME/"
+echo "Symlinking dotfiles to $HOME/..."
 for i in "${dotfiles[@]}"; do
-    echo "    $i"
     ln -s $force $PWD/$i $HOME/
 done
 
-echo "Loading GNOME keybindings"
-echo "    keybindings.dconf"
+echo "Loading GNOME keybindings..."
 dconf load /org/gnome/desktop/wm/keybindings/ < keybindings.dconf
-echo "    keybindings-extra.dconf"
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < keybindings-extra.dconf
 
 echo -n "Install packages from the pkglist file? [y/N]: "
@@ -24,8 +21,6 @@ read answer
 
 if [ "$answer" != "${answer#[Yy]}" ]; then
     sudo dnf install $(cat pkglist)
-else
-    echo "Skipping package installation"
 fi
 
 echo "Done!"
