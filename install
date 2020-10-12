@@ -13,8 +13,9 @@ for i in "${dotfiles[@]}"; do
 done
 
 echo "Loading GNOME keybindings..."
-dconf load /org/gnome/desktop/wm/keybindings/ < keybindings.dconf
-dconf load /org/gnome/settings-daemon/plugins/media-keys/ < keybindings-extra.dconf
+dconf load /org/gnome/desktop/wm/ < wm.dconf
+dconf load /org/gnome/desktop/peripherals/mouse/ < mouse.dconf
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < media-keys.dconf
 
 echo -n "Install packages from the pkglist file? [y/N]: "
 read answer

@@ -1,4 +1,4 @@
-[/]
+[keybindings]
 close=['<Super>c']
 move-to-workspace-down=['<Shift><Super>j']
 move-to-workspace-up=['<Shift><Super>k']
@@ -8,3 +8,6 @@ switch-to-workspace-down=['<Super>j']
 switch-to-workspace-up=['<Super>k']
 switch-windows=['<Alt>Tab']
 switch-windows-backward=['<Shift><Alt>Tab']
+
+[preferences]
+resize-with-right-button=true
