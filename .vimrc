@@ -2,6 +2,7 @@ syntax off
 
 set autoindent
 set guioptions=
+set nohlsearch
 set ignorecase
 set expandtab
 set tabstop     =4
