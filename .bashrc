@@ -33,6 +33,7 @@ export PS1='\w $(__git_ps1 "(%s) ")\\$ '
 
 # Aliases
 alias vi='nvim'
+alias t='tmux'
 alias x='startx'
 alias poweroff='systemctl poweroff'
 alias suspend='systemctl suspend'
