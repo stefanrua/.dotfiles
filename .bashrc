@@ -28,7 +28,8 @@ PATH="$HOME/go/bin:$PATH"
 export PATH
 
 # Prompt
-export PS1="\w \\$ "
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+export PS1='\w $(__git_ps1 "(%s) ")\\$ '
 
 # Aliases
 alias vi='vim'
