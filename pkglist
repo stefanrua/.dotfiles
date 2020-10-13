@@ -4,4 +4,4 @@ pandoc
 texlive
 tlp
 tmux
-vim
+neovim

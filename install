@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=(".bashrc" ".vimrc" ".tmux.conf")
+dotfiles=(".bashrc" ".tmux.conf")
 force=""
 
 if [ "$1" == "-f" ]; then
@@ -11,6 +11,9 @@ echo "Symlinking dotfiles to $HOME/..."
 for i in "${dotfiles[@]}"; do
     ln -s $force $PWD/$i $HOME/
 done
+
+echo "Symlinking config folders to $HOME/.config/..."
+ln -s $force $PWD/nvim $HOME/.config/
 
 echo "Loading GNOME keybindings..."
 dconf load /org/gnome/desktop/input-sources/ < input-sources.dconf

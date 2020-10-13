@@ -32,7 +32,7 @@ source /usr/share/git-core/contrib/completion/git-prompt.sh
 export PS1='\w $(__git_ps1 "(%s) ")\\$ '
 
 # Aliases
-alias vi='vim'
+alias vi='nvim'
 alias x='startx'
 alias poweroff='systemctl poweroff'
 alias suspend='systemctl suspend'
