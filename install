@@ -20,6 +20,8 @@ dconf load /org/gnome/desktop/input-sources/ < input-sources.dconf
 dconf load /org/gnome/desktop/peripherals/mouse/ < mouse.dconf
 dconf load /org/gnome/desktop/wm/ < wm.dconf
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < media-keys.dconf
+dconf load /org/gnome/shell/extensions/dash-to-dock/ < dash-to-dock.dconf
+dconf load /org/gnome/desktop/interface/ < interface.dconf
 
 echo -n "Install packages from the pkglist file? [y/N]: "
 read answer
