@@ -27,7 +27,7 @@ echo -n "Install packages from the pkglist file? [y/N]: "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    sudo dnf install $(cat pkglist)
+    sudo apt install $(cat pkglist)
 fi
 
 echo "Done!"
