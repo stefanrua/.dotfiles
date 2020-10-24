@@ -30,11 +30,11 @@ echo "Symlinking config folders to $HOME/.config/..."
 ln -s $force $PWD/nvim $HOME/.config/
 
 echo "Loading GNOME keybindings..."
-dconf load /org/gnome/desktop/input-sources/ < input-sources.dconf
-dconf load /org/gnome/desktop/peripherals/mouse/ < mouse.dconf
-dconf load /org/gnome/desktop/wm/ < wm.dconf
-dconf load /org/gnome/settings-daemon/plugins/media-keys/ < media-keys.dconf
-dconf load /org/gnome/shell/extensions/ < extensions.dconf
-dconf load /org/gnome/desktop/interface/ < interface.dconf
+dconf load /org/gnome/desktop/input-sources/ < dconfs/input-sources.dconf
+dconf load /org/gnome/desktop/peripherals/mouse/ < dconfs/mouse.dconf
+dconf load /org/gnome/desktop/wm/ < dconfs/wm.dconf
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < dconfs/media-keys.dconf
+dconf load /org/gnome/shell/extensions/ < dconfs/extensions.dconf
+dconf load /org/gnome/desktop/interface/ < dconfs/interface.dconf
 
 echo "Done!"
