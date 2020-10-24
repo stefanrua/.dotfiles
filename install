@@ -14,6 +14,13 @@ if [ "$answer" != "${answer#[Yy]}" ]; then
     sudo apt install $(cat pkglist)
 fi
 
+echo -n "Open gnome extension urls from the extlist file? [y/N]: "
+read answer
+
+if [ "$answer" != "${answer#[Yy]}" ]; then
+    firefox $(cat extlist)
+fi
+
 echo "Symlinking dotfiles to $HOME/..."
 for i in "${dotfiles[@]}"; do
     ln -s $force $PWD/$i $HOME/
