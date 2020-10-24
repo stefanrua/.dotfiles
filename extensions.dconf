@@ -1,0 +1,6 @@
+[dash-to-dock]
+dock-fixed=false
+preferred-monitor=0
+
+[user-theme]
+name='Materia'
