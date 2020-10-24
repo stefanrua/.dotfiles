@@ -1,5 +1,6 @@
 [dash-to-dock]
 dock-fixed=false
+dock-position='LEFT'
 preferred-monitor=0
 
 [user-theme]

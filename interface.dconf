@@ -1,5 +1,5 @@
 [/]
 cursor-theme='Adwaita'
 gtk-im-module='gtk-im-context-simple'
-gtk-theme='Materia-compact'
+gtk-theme='Materia-light-compact'
 icon-theme='Papirus'
