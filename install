@@ -7,6 +7,13 @@ if [ "$1" == "-f" ]; then
     force="$1"
 fi
 
+echo -n "Install packages from the pkglist file? [y/N]: "
+read answer
+
+if [ "$answer" != "${answer#[Yy]}" ]; then
+    sudo apt install $(cat pkglist)
+fi
+
 echo "Symlinking dotfiles to $HOME/..."
 for i in "${dotfiles[@]}"; do
     ln -s $force $PWD/$i $HOME/
@@ -22,12 +29,5 @@ dconf load /org/gnome/desktop/wm/ < wm.dconf
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < media-keys.dconf
 dconf load /org/gnome/shell/extensions/ < extensions.dconf
 dconf load /org/gnome/desktop/interface/ < interface.dconf
-
-echo -n "Install packages from the pkglist file? [y/N]: "
-read answer
-
-if [ "$answer" != "${answer#[Yy]}" ]; then
-    sudo apt install $(cat pkglist)
-fi
 
 echo "Done!"
