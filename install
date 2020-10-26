@@ -37,5 +37,6 @@ dconf load /org/gnome/desktop/wm/ < dconfs/wm.dconf
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < dconfs/media-keys.dconf
 dconf load /org/gnome/shell/extensions/ < dconfs/extensions.dconf
 dconf load /org/gnome/desktop/interface/ < dconfs/interface.dconf
+dconf load /org/gnome/terminal/ < dconfs/terminal.dconf
 
 echo "Done!"

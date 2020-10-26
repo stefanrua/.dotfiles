@@ -7,3 +7,4 @@ dconf dump /org/gnome/desktop/wm/ > dconfs/wm.dconf
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > dconfs/media-keys.dconf
 dconf dump /org/gnome/shell/extensions/ > dconfs/extensions.dconf
 dconf dump /org/gnome/desktop/interface/ > dconfs/interface.dconf
+dconf dump /org/gnome/terminal/ > dconfs/terminal.dconf
