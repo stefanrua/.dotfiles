@@ -25,4 +25,4 @@ hi User4 ctermfg=white ctermbg=gray
 set statusline=%=%1*\ %m\ %f\ %2*\ %l/%L\ %*
 "set statusline=%=%3*\ %m\ %f\ %4*\ %l/%L\ %*
 
-autocmd Filetype gitcommit setlocal textwidth=72
+autocmd FileType gitcommit setlocal textwidth=72
