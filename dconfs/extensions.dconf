@@ -2,6 +2,7 @@
 dock-fixed=false
 dock-position='LEFT'
 preferred-monitor=0
+show-trash=false
 
 [user-theme]
 name='Materia'
