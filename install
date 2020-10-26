@@ -32,6 +32,7 @@ ln -s $force $PWD/nvim $HOME/.config/
 echo "Loading GNOME keybindings..."
 dconf load /org/gnome/desktop/input-sources/ < dconfs/input-sources.dconf
 dconf load /org/gnome/desktop/peripherals/mouse/ < dconfs/mouse.dconf
+dconf load /org/gnome/desktop/peripherals/touchpad/ < dconfs/touchpad.dconf
 dconf load /org/gnome/desktop/wm/ < dconfs/wm.dconf
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < dconfs/media-keys.dconf
 dconf load /org/gnome/shell/extensions/ < dconfs/extensions.dconf
