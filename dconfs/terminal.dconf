@@ -2,7 +2,7 @@
 background-color='rgb(0,0,0)'
 bold-is-bright=true
 foreground-color='rgb(255,255,255)'
-palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+palette=['#000000', '#cc6666', '#66cc99', '#cc9966', '#6699cc', '#cc6699', '#66cccc', '#cccccc', '#999999', '#ff9999', '#99ffcc', '#ffcc99', '#99ccff', '#ff99cc', '#99ffff', '#ffffff']
 scrollbar-policy='never'
 use-system-font=true
 use-theme-colors=false
