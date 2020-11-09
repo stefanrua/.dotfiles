@@ -26,6 +26,9 @@ for i in "${dotfiles[@]}"; do
     ln -s $force $PWD/$i $HOME/
 done
 
+echo "Symlinking lightdm config to /etc/lightdm/..."
+sudo ln -s $force $PWD/lightdm-gtk-greeter.conf /etc/lightdm/
+
 echo "Symlinking config folders to $HOME/.config/..."
 ln -s $force $PWD/nvim $HOME/.config/
 
