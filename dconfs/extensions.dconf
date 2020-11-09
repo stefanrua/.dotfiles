@@ -1,6 +1,6 @@
 [dash-to-dock]
 dock-fixed=false
-dock-position='LEFT'
+dock-position='BOTTOM'
 preferred-monitor=0
 show-trash=false
 
