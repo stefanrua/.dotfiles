@@ -1,13 +1,14 @@
-syntax off
+syntax on
 
 set autoindent
 set nohlsearch
-set ignorecase
+set smartcase
 set expandtab
 set tabstop     =4
 set softtabstop =4
 set shiftwidth  =4
 set clipboard^=unnamed,unnamedplus
+set scrolloff=5
 
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
