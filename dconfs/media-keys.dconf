@@ -1,6 +1,12 @@
 [/]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 mic-mute=['<Super>f']
+next=['<Super>b']
+play=['<Super>c']
+previous=['<Super>z']
+volume-down=['<Super>a']
+volume-mute=['<Super>d']
+volume-up=['<Super>s']
 
 [custom-keybindings/custom0]
 binding='<Super>Return'
