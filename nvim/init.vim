@@ -2,6 +2,7 @@ syntax on
 
 set autoindent
 set nohlsearch
+set ignorecase
 set smartcase
 set expandtab
 set tabstop     =4
