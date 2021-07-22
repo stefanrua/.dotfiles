@@ -21,6 +21,8 @@ nnoremap <C-h> :-tabmove<CR>
 nnoremap <C-t> :tabedit<CR>
 nnoremap <C-w> :quit<CR>
 
+nnoremap <C-m> :w <bar> :!make<CR>
+
 highlight NonText ctermfg=darkgray
 highlight LineNr ctermfg=darkgray
 
