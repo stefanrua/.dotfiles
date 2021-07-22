@@ -14,8 +14,8 @@ set scrolloff=5
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
-nnoremap <C-j> :tabnext<CR>
-nnoremap <C-k> :tabprevious<CR>
+nnoremap <C-k> :tabnext<CR>
+nnoremap <C-j> :tabprevious<CR>
 nnoremap <C-l> :+tabmove<CR>
 nnoremap <C-h> :-tabmove<CR>
 nnoremap <C-t> :tabedit<CR>
