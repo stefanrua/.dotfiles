@@ -14,6 +14,16 @@ set scrolloff=5
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
+nnoremap <C-n> :tabnext<CR>
+nnoremap <C-p> :tabprevious<CR>
+nnoremap <C-j> :tabnext<CR>
+nnoremap <C-k> :tabprevious<CR>
+nnoremap <C-tab> :tabnext<CR>
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-k> :tabprevious<CR>
+nnoremap <C-t> :tabedit<CR>
+nnoremap <C-w> :quit<CR>
+
 highlight NonText ctermfg=darkgray
 highlight LineNr ctermfg=darkgray
 
