@@ -21,19 +21,28 @@ nnoremap <C-h> :-tabmove<CR>
 nnoremap <C-t> :tabedit<CR>
 nnoremap <C-w> :quit<CR>
 
+nnoremap <C-n> :wincmd w<CR>
+nnoremap <C-p> :wincmd W<CR>
+
 nnoremap <C-m> :w <bar> :!make<CR>
 
 highlight NonText ctermfg=darkgray
 highlight LineNr ctermfg=darkgray
 
-set laststatus=2
-hi StatusLine ctermfg=black ctermbg=NONE cterm=NONE
-hi StatusLineNC ctermfg=darkgray ctermbg=NONE cterm=NONE
+set laststatus=1
+hi StatusLine ctermfg=white ctermbg=darkgray cterm=NONE
+hi StatusLineNC ctermfg=gray ctermbg=darkgray cterm=NONE
+hi VertSplit ctermfg=darkgray ctermbg=darkgray cterm=NONE
 hi User1 ctermfg=black ctermbg=white
 hi User2 ctermfg=black ctermbg=gray
 hi User3 ctermfg=white ctermbg=darkgray
 hi User4 ctermfg=white ctermbg=gray
-set statusline=%=%1*\ %m\ %f\ %2*\ %l/%L\ %*
-"set statusline=%=%3*\ %m\ %f\ %4*\ %l/%L\ %*
+"set statusline=%=%1*\ %m\ %f\ %2*\ %l/%L\ %*
+set statusline=%=%3*\ %m\ %f\ %4*\ %l/%L\ %*
+"set statusline=%=%2*\ %l/%L\ %*
+
+hi TabLineFill ctermfg=black ctermbg=NONE
+hi TabLine ctermfg=gray ctermbg=NONE cterm=NONE
+hi TabLineSel ctermfg=white ctermbg=NONE cterm=bold
 
 autocmd FileType gitcommit setlocal textwidth=72
