@@ -1,4 +1,5 @@
 syntax on
+colorscheme zellner
 
 set autoindent
 set nohlsearch
@@ -10,6 +11,12 @@ set softtabstop =4
 set shiftwidth  =4
 set clipboard^=unnamed,unnamedplus
 set scrolloff=5
+
+set linebreak
+set wrap
+
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
 
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
