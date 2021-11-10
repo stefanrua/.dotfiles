@@ -45,6 +45,6 @@ ln -s $force $PWD/nvim $HOME/.config/
 # dconf load /org/gnome/terminal/ < dconfs/terminal.dconf
 
 # echo "Setting GNOME terminal theme..."
-./gnome-terminal-theme
+gnome-terminal-themes/ashes-bright
 
 echo "Done!"
