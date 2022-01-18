@@ -52,7 +52,9 @@ set laststatus=1
 " hi TabLine ctermfg=gray ctermbg=NONE cterm=NONE
 " hi TabLineSel ctermfg=white ctermbg=NONE cterm=bold
 
-hi TabLine cterm=NONE
+hi TabLine cterm=none
+hi Visual ctermfg=none ctermbg=darkgray
+hi MatchParen ctermfg=none ctermbg=darkgray
 
 autocmd FileType gitcommit setlocal textwidth=72
 
