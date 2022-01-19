@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# https://wiki.debian.org/NvidiaGraphicsDrivers
+# https://wiki.debian.org/Steam
+
+dpkg --add-architecture i386
+apt update
+
+# NVidia
+apt install linux-headers-amd64 \
+    nvidia-driver \
+    firmware-misc-nonfree \
+    nvidia-driver-libs:i386
+
+# Steam
+apt install steam \
+    mesa-vulkan-drivers \
+    libglx-mesa0:i386 \
+    mesa-vulkan-drivers:i386 \
+    libgl1-mesa-dri:i386
