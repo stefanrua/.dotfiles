@@ -4,6 +4,8 @@ Configuration files suited to my taste.
 
 ## Installation
 
+**These configs and scripts are for Debian**
+
 Clone this repo to your home directory, some scripts use hardcoded paths relative to `~`.
 
 Please read the `install` script before executing it, as well as the relevant
