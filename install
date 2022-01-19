@@ -1,11 +1,16 @@
 #!/bin/bash
 
-dotfiles=(".bashrc" ".tmux.conf")
+dotfiles=(".bashrc" ".tmux.conf" ".gitconfig")
 force=""
 
 if [ "$1" == "-f" ]; then
     force="$1"
 fi
+
+echo "Symlinking dotfiles to $HOME/"
+for i in "${dotfiles[@]}"; do
+    ln -s $force $PWD/$i $HOME/
+done
 
 echo -n "Install packages from the pkglist file? [y/N]: "
 read answer
@@ -17,12 +22,8 @@ echo -n "Install gaming stuff? [y/N]: "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     sudo ./install-gaming
+    git clone git@github.com:stefanrua/gamesettings.git $HOME/gamesettings
 fi
-
-echo "Symlinking dotfiles to $HOME/"
-for i in "${dotfiles[@]}"; do
-    ln -s $force $PWD/$i $HOME/
-done
 
 # echo "Symlinking configs to /etc/"
 # sudo ln -s $force $PWD/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
