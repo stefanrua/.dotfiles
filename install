@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=(".bashrc" ".tmux.conf" ".gitconfig")
+dotfiles=(".bashrc" ".tmux.conf" ".gitconfig" ".nvidia-settings-rc")
 force=""
 
 if [ "$1" == "-f" ]; then
