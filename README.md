@@ -19,3 +19,7 @@ cd .dotfiles/
 
 You can pass `-f` to `install` if you want to replace existing config files
 when symlinking.
+
+## Quick note regarding gaming
+
+Linux's default CPU scheduler is optimized for throughput instead of responsiveness. This sucks for playing CPU intensive games such as CS:GO. Thankfully there are tweaks for remedying this: https://liquorix.net.
