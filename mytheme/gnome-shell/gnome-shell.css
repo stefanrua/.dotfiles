@@ -1,0 +1,10 @@
+@import url("/usr/share/gnome-shell/theme/gnome-shell.css");
+
+/* Hide popup when switching workspaces */
+.workspace-switcher-container,
+.workspace-switcher-container * {
+    background: transparent;    
+    border: none;
+    box-shadow: none;
+}
+

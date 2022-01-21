@@ -31,6 +31,10 @@ fi
 echo "Symlinking config folders to $HOME/.config/"
 ln -s $force $PWD/nvim $HOME/.config/
 
+echo "Symlinking my theme to $HOME/.themes/"
+mkdir $HOME/.themes/
+ln -s $force $PWD/mytheme $HOME/.themes/
+
 # echo "Loading GNOME keybindings"
 # dconf load /org/gnome/desktop/input-sources/ < dconfs/input-sources.dconf
 # dconf load /org/gnome/desktop/peripherals/mouse/ < dconfs/mouse.dconf
