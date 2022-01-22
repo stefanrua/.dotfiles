@@ -1,9 +1,0 @@
-[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(0,0,0)'
-bold-is-bright=true
-foreground-color='rgb(255,255,255)'
-palette=['#000000', '#cc6666', '#66cc99', '#cc9966', '#6699cc', '#cc6699', '#66cccc', '#cccccc', '#999999', '#ff9999', '#99ffcc', '#ffcc99', '#99ccff', '#ff99cc', '#99ffff', '#ffffff']
-scrollbar-policy='never'
-use-system-font=true
-use-theme-colors=false
-visible-name='Gud'

@@ -1,8 +1,0 @@
-[dash-to-dock]
-dock-fixed=false
-dock-position='BOTTOM'
-preferred-monitor=0
-show-trash=false
-
-[user-theme]
-name='Materia'

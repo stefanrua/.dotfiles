@@ -12,6 +12,13 @@ for i in "${dotfiles[@]}"; do
     ln -s $force $PWD/$i $HOME/
 done
 
+echo "Symlinking config folders to $HOME/.config/"
+ln -s $force $PWD/nvim $HOME/.config/
+
+echo "Symlinking my theme to $HOME/.themes/"
+mkdir $HOME/.themes/
+ln -s $force $PWD/mytheme $HOME/.themes/
+
 echo -n "Install packages from the pkglist file? [y/N]: "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
@@ -25,30 +32,8 @@ if [ "$answer" != "${answer#[Yy]}" ]; then
     git clone git@github.com:stefanrua/gamesettings.git $HOME/gamesettings
 fi
 
-# echo "Symlinking configs to /etc/"
-# sudo ln -s $force $PWD/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
-
-echo "Symlinking config folders to $HOME/.config/"
-ln -s $force $PWD/nvim $HOME/.config/
-
-echo "Symlinking my theme to $HOME/.themes/"
-mkdir $HOME/.themes/
-ln -s $force $PWD/mytheme $HOME/.themes/
-
-# echo "Loading GNOME keybindings"
-# dconf load /org/gnome/desktop/input-sources/ < dconfs/input-sources.dconf
-# dconf load /org/gnome/desktop/peripherals/mouse/ < dconfs/mouse.dconf
-# dconf load /org/gnome/desktop/peripherals/touchpad/ < dconfs/touchpad.dconf
-# dconf load /org/gnome/desktop/wm/ < dconfs/wm.dconf
-# dconf load /org/gnome/settings-daemon/plugins/media-keys/ < dconfs/media-keys.dconf
-# dconf load /org/gnome/shell/extensions/ < dconfs/extensions.dconf
-# dconf load /org/gnome/desktop/interface/ < dconfs/interface.dconf
-# dconf load /org/gnome/terminal/ < dconfs/terminal.dconf
-
-# echo "Setting GNOME terminal theme"
-# gnome-terminal-themes/ashes-bright
-
 echo "Installing pywal"
 pip3 install pywal
 
-echo "Done!"
+echo "Loading GNOME settings"
+dconf load /org/gnome/ < gnome.dconf
