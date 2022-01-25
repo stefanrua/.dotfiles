@@ -2,7 +2,7 @@
 # /home/stefan/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
-# Generated on Thu Jan 20 18:40:23 2022
+# Generated on Mon Jan 24 17:27:50 2022
 #
 
 # ConfigProperties:
@@ -40,25 +40,25 @@ Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 [DPY:DVI-I-1]/ColorSpace=0
 [DPY:DVI-I-1]/ColorRange=0
 [DPY:DVI-I-1]/SynchronousPaletteUpdates=0
+[DPY:HDMI-0]/RedBrightness=0.000000
+[DPY:HDMI-0]/GreenBrightness=0.000000
+[DPY:HDMI-0]/BlueBrightness=0.000000
+[DPY:HDMI-0]/RedContrast=0.000000
+[DPY:HDMI-0]/GreenContrast=0.000000
+[DPY:HDMI-0]/BlueContrast=0.000000
+[DPY:HDMI-0]/RedGamma=1.000000
+[DPY:HDMI-0]/GreenGamma=1.000000
+[DPY:HDMI-0]/BlueGamma=1.000000
 [DPY:HDMI-0]/Dithering=0
 [DPY:HDMI-0]/DitheringMode=0
 [DPY:HDMI-0]/DitheringDepth=0
+[DPY:HDMI-0]/DigitalVibrance=0
 [DPY:HDMI-0]/ColorSpace=0
 [DPY:HDMI-0]/ColorRange=0
 [DPY:HDMI-0]/SynchronousPaletteUpdates=0
-[DPY:DP-0]/RedBrightness=0.000000
-[DPY:DP-0]/GreenBrightness=0.000000
-[DPY:DP-0]/BlueBrightness=0.000000
-[DPY:DP-0]/RedContrast=0.000000
-[DPY:DP-0]/GreenContrast=0.000000
-[DPY:DP-0]/BlueContrast=0.000000
-[DPY:DP-0]/RedGamma=1.000000
-[DPY:DP-0]/GreenGamma=1.000000
-[DPY:DP-0]/BlueGamma=1.000000
 [DPY:DP-0]/Dithering=0
 [DPY:DP-0]/DitheringMode=0
 [DPY:DP-0]/DitheringDepth=0
-[DPY:DP-0]/DigitalVibrance=0
 [DPY:DP-0]/ColorSpace=0
 [DPY:DP-0]/ColorRange=0
 [DPY:DP-0]/SynchronousPaletteUpdates=0

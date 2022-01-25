@@ -11,4 +11,5 @@ neovim
 pandoc
 texlive
 tmux
+xdotool
 xfonts-terminus
