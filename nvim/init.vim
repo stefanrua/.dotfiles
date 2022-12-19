@@ -15,6 +15,8 @@ set scrolloff=5
 set linebreak
 set wrap
 
+let mapleader = ' '
+
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
 
@@ -25,7 +27,7 @@ nnoremap <C-k> :tabnext<CR>
 nnoremap <C-j> :tabprevious<CR>
 nnoremap <C-l> :+tabmove<CR>
 nnoremap <C-h> :-tabmove<CR>
-nnoremap <C-t> :tabedit<CR>
+"nnoremap <C-t> :tabedit<CR>
 nnoremap <C-w> :quit<CR>
 
 nnoremap <C-n> :wincmd w<CR>
@@ -70,6 +72,10 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'eigenfoo/stan-vim'
 Plug 'tpope/vim-commentary'
+Plug 'mbbill/undotree'
+Plug 'junegunn/fzf'
 call plug#end()
+
+nnoremap <leader>f :FZF<return>
+nnoremap <leader>u :UndotreeToggle<return>
